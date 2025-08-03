@@ -3754,12 +3754,16 @@ input, select, textarea {
 						background-color: rgba(255, 255, 255, 0.1);
 					}
 
+				#nav ul.links li:hover {
+					background-color: #ff6000;
+				}
+
 				#nav ul.links li.active {
 					background-color: #ffffff;
 				}
 
 					#nav ul.links li.active a {
-						color: #1e252d;
+						color: #ff6000;
 					}
 
 						#nav ul.links li.active a:hover {
@@ -4630,7 +4634,11 @@ input, select, textarea {
 					padding: 0.75rem 0;
 					text-transform: uppercase;
 				}
-
+				
+				#navPanel .links li.active a {
+					color: #ff6000;
+				}
+				
 				#navPanel .links li:first-child {
 					border-top: 0;
 				}
