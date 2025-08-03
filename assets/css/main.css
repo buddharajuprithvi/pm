@@ -4720,3 +4720,19 @@ input, select, textarea {
 		}
 
 	}
+
+	/* Add styles to hide and show elements based on screen size */
+
+	/* Hide desktop-only on small screens */
+	@media screen and (max-width: 768px) {
+	    .desktop-only {
+	        display: none !important;
+	    }
+	}
+
+	/* Hide mobile-only on large screens */
+	@media screen and (min-width: 769px) {
+	    .mobile-only {
+	        display: none !important;
+	    }
+	}
