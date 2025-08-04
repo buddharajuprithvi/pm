@@ -2576,7 +2576,7 @@ input, select, textarea {
 
 		.icon:before {
 			line-height: inherit;
-		}
+			}
 
 		.icon.solid:before {
 			font-weight: 900;
@@ -4744,3 +4744,7 @@ input, select, textarea {
 	        display: none !important;
 	    }
 	}
+
+.content {
+    text-align: justify;
+}
