@@ -2871,6 +2871,10 @@ input, select, textarea {
 		padding-left: 1rem;
 	}
 
+	ul.left_space {
+		margin-left: 2rem;
+	}
+
 		ul li {
 			padding-left: 0.5rem;
 		}
@@ -3340,7 +3344,7 @@ input, select, textarea {
 		font-size: 24px;
 	}
 
-	#intro .highlight {
+	.highlight {
 		border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
 		/* font-size: 24px; */
 		/* font-weight: 400; */
@@ -3803,7 +3807,7 @@ input, select, textarea {
 
 		#main > * {
 			padding: 4rem 4rem 2rem 4rem ;
-			border-top: solid 2px #eeeeee;
+			border-top: solid 2px #c6c6c6;
 			margin: 0;
 		}
 
