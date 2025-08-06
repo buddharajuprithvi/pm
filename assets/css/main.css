@@ -2662,7 +2662,7 @@ input, select, textarea {
 			}
 
 			.image.main.image_border img {
-				border: 2px solid #1e272d;
+				border: 2px solid #000000;
 			}
 
 		@media screen and (max-width: 736px) {
