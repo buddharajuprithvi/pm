@@ -179,6 +179,11 @@ input, select, textarea {
 		text-align: justify;
 		margin: 0 0 2rem 0;
 	}
+	
+	p.extra_margin_bottom {
+		text-align: justify;
+		margin: 0 0 4rem 0;
+	}
 
 	h1, h2, h3, h4, h5, h6 {
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -3348,6 +3353,16 @@ input, select, textarea {
 		border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
 		/* font-size: 24px; */
 		/* font-weight: 400; */
+	}
+
+	.highlight_inverted {
+		border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
+		/* font-size: 24px; */
+		/* font-weight: 400; */
+	}
+
+	.space_right {
+		margin-right: 5px;
 	}
 
 		#intro input, #intro select, #intro textarea {
