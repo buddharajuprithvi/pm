@@ -3361,6 +3361,38 @@ input, select, textarea {
 		/* font-weight: 400; */
 	}
 
+	.skills_container {
+		display: flex;
+	}
+
+	.skills_left_container {
+		width: 150px;
+	}
+
+	.skills_right_container {
+		width: calc(100% - 150px);
+		word-break: break-word;
+	}
+
+	@media screen and (max-width: 786px) {
+
+		.skills_container {
+			flex-direction: column;
+			margin-bottom: 32px;
+		}
+
+		.skills_left_container {
+			width: 100%;
+			text-align: center;
+		}
+	
+		.skills_right_container {
+			width: 100%;
+			text-align: justify;
+		}
+
+	}
+
 	.space_right {
 		margin-right: 5px;
 	}
