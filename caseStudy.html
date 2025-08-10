@@ -49,8 +49,8 @@
 							<li><a href="alziTech.html#main" class="mobile-only">Alzi Tech (Founder)</a></li>
 							<li><a href="education.html#nav" class="desktop-only">Education & Skills</a></li>
 							<li><a href="education.html#main" class="mobile-only">Education & Skills</a></li>
-							<li class="active"><a href="caseStudy.html#nav" class="desktop-only">Case Studies</a></li>
-							<li class="active"><a href="caseStudy.html#main" class="mobile-only">Case Studies</a></li>
+							<li class="active"><a href="caseStudy.html#nav" class="desktop-only">Product Teardown</a></li>
+							<li class="active"><a href="caseStudy.html#main" class="mobile-only">Product Teardown</a></li>
 						</ul>
 					</nav>
 
@@ -59,17 +59,65 @@
 
 						<section class="post">
 							<header class="major">
-								<h3>Case Studies</h3>
+								<h3>Product Teardown</h3>
 							</header>
-							<p>
+							<p class="justify">
 								Following my passion for product management, I have worked on several case studies to hone my skills and apply my knowledge in real-world scenarios. Here are some of the case studies I have worked on:
 							</p>
-
-							<br />
-							<br />
-							
-							<p><span class="image left"><img src="images/pic08.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis.</p>
-							<p><span class="image right"><img src="images/pic09.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis.</p>
+						</section>
+						<section class="post">
+							<header>
+								<p class="case_study_header">
+									<a href="https://www.splitwise.com/" target="_blank">
+										<!-- Splitwise Inc. -->
+										www.splitwise.com
+									</a>
+								</p>
+							</header>
+							<div class="mobile_view_style">
+								<span class="image left">
+									<div>
+										<a href="cases/Splitwise_Product_Teardown.pdf" target="_blank" class="embed-link">
+											<embed width="191" height="269px" name="plugin" src="cases/Splitwise_Product_Teardown.pdf" type="application/pdf" />
+										</a>
+									</div>
+									<div class="center">
+										<a href="cases/Splitwise_Product_Teardown.pdf" target="_blank">
+											Link
+										</a>
+									</div>
+								</span>
+								<div class="justify">
+									An in-depth product teardown of Splitwise, mapping the end-to-end user journey, identifying friction points, and analyzing strategic levers for improving engagement and retention. Through user research and competitive benchmarking, proposed four high-impact initiatives: launching a mobile-native itemized expenses feature, integrating in-app payments to retain users within the platform, enabling bill scanning with image processing for automated transaction entry, and linking bank transaction data to streamline expense recall. Each initiative was supported by defined success metrics, risk and trade-off analysis, and a prioritization framework to inform an execution-focused product roadmap.
+								</div>
+							</div>
+						</section>
+						<section class="post">
+							<header>
+								<p class="case_study_header">
+									<a href="https://www.myfitnesspal.com/" target="_blank">
+										<!-- MyFitnessPal, Inc. -->
+										www.myfitnesspal.com
+									</a>
+								</p>
+							</header>
+							<div class="mobile_view_style">
+								<span class="image left">
+									<div>
+										<a href="cases/MyFitnessPal.pdf" target="_blank" class="embed-link">
+											<embed width="191" height="269px" name="plugin" src="cases/MyFitnessPal.pdf" type="application/pdf" />
+										</a>
+									</div>
+									<div class="center">
+										<a href="cases/MyFitnessPal.pdf" target="_blank">
+											Link
+										</a>
+									</div>
+								</span>
+								<div class="justify">
+									A product teardown of MyFitnessPal, evaluating market dynamics, competitive landscape, and target user segments to identify strategic opportunities for increasing engagement and retention. Leveraging user insights and gap analysis, proposed three high-impact initiatives: integrating partner restaurant menu data for accurate calorie tracking, implementing culturally localized and searchable recipe recommendations, and enabling in-gym equipment guidance through NFC/QR code integration. Each recommendation was supported by defined success metrics, risk assessments, and trade-off analysis to inform a data-driven product roadmap.
+								</div>
+							</div>
 						</section>
 					</div>
 
@@ -92,6 +140,40 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+		<style>
+			/* Add this CSS to your main stylesheet or within a <style> tag */
+			.embed-link {
+				display: inline-block;
+				width: 191px; /* Match the width of the embed */
+				height: 269px; /* Match the height of the embed */
+				cursor: pointer;
+				position: relative;
+			}
+			.embed-link embed {
+				pointer-events: none; /* Prevent interaction with the embed itself */
+			}
+		</style>
+
+		<style>
+/* Fix for making the entire embed clickable */
+.embed-link {
+    display: inline-block;
+    width: 191px; /* Match the width of the embed */
+    height: 269px; /* Match the height of the embed */
+    position: relative; /* Ensure proper positioning */
+}
+.embed-link:hover {
+   /* border: 1px solid #ff6000; */
+   /* box-shadow: 0px 4px 8px #ff6000; */
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.embed-link embed {
+    pointer-events: none; /* Disable interaction with the embed */
+    width: 100%; /* Ensure the embed fills the a tag */
+    height: 100%; /* Ensure the embed fills the a tag */
+}
+</style>
 
 	</body>
 </html>
