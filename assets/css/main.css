@@ -4864,6 +4864,14 @@ input, select, textarea {
 	font-weight: 900;
 }
 
+.case_container {
+	display: flex;
+
+	ol {
+		margin-left: 20px;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	.mobile_view_style {
 		display: flex;
@@ -4874,4 +4882,50 @@ input, select, textarea {
 
 .justify {
 	text-align: justify;
+}
+
+.recommendation_text_container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.quotation_start_container {
+
+}
+
+.quotation_start {
+	width: 12px;
+	height: 12px;
+	vertical-align: middle;
+	margin-right: 8px;
+	transform: scaleY(-1);
+}
+
+.recommendation_text {
+	width: calc(100% - 4 * (12px));
+	margin-top: 20px;
+	text-align: justify;
+	font-size: 12px;
+}
+
+.quotation_end_container {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.quotation_end {
+	width: 12px;
+	height: 12px;
+	vertical-align: middle;
+	margin-right: 8px;
+	transform: scaleY(-1);
+	transform: scaleX(-1);
+}
+
+.recommended_by {
+	display: flex;
+	flex-direction: column;
+    align-items: flex-end;
+	margin-right: 40px;
 }
