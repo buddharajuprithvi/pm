@@ -184,8 +184,84 @@
 					</div>
 
 				<!-- Footer -->
-					<footer id="footer">
-						<br /><br />
+					<footer class="footer" id="footer">
+						<div>
+							<b>
+								Would love to chat with you. Send me a message and I will get back to you as soon as possible.
+							</b>
+							<br />
+							<br />
+						</div>
+						<!-- <div>
+							Feel free to reach out to me at : <a href="mailto:prithvibuddharaju@gmail.com">prithvibuddharaju@gmail.com</a>
+						</div> -->
+						<div>
+							<form class="contact_form" id="contactForm">
+								<div class="primary_form_container">
+									<div class="name_section">
+										<label for="name">Name:</label>
+										<input type="text" id="name" name="name" placeholder="Enter your name..." required /><br />
+									</div>
+									
+									<div class="email_section">
+										<label for="email">Email:</label>
+										<input type="email" id="email" name="email" placeholder="Enter your email..." required /><br />
+									</div>
+								</div>
+								
+								<label for="comment">Leave a comment:</label>
+								<textarea id="comment" name="comment" rows="4" cols="50" placeholder="Enter your comment here..." required></textarea><br />
+								
+								<button type="button" id="sendEmailButton">Send</button>
+							</form>
+							<!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
+							<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"> </script>
+							<script>
+								(function() {
+									// Initialize EmailJS with your user ID
+									emailjs.init("Tl5c7gQB5buQbYOp-"); // Replace with your actual EmailJS public key from the EmailJS dashboard
+								})();
+
+								document.getElementById('sendEmailButton').addEventListener('click', function () {
+									const name = document.getElementById('name').value;
+									const email = document.getElementById('email').value;
+									const comment = document.getElementById('comment').value;
+									if (comment.trim() === '') {
+										alert('Please enter a comment before sending.');
+										return;
+									}
+									if (email.trim() === '') {
+										alert('Please enter an email for Prithvi to get back to you.');
+										return;
+									}
+									const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+									if (!emailPattern.test(email)) {
+										alert('OOPS !! Please enter a valid email address for Prithvi to get back to you.');
+										return;
+									}
+
+									emailjs.send("service_fvyduz5","template_wi8qdl4",{
+										name: name,
+										time: new Date().toLocaleString('en-GB', { day: '2-digit', month: '2-digit', year: '2-digit', hour: '2-digit', minute: '2-digit', hour12: true }).replace(',', ''),
+										message: comment,
+										title: `${name} is trying to reach you`,
+										email: email,
+									}).then(function(response) {
+										alert('Email sent successfully!');
+									}, function(error) {
+										alert('Failed to send email: ' + error.text);
+									});
+
+									// // Send the email using EmailJS
+									// emailjs.send('service_fvyduz5', 'template_wi8qdl4', templateParams) // Replace with your actual EmailJS service ID and template ID
+									// 	.then(function(response) {
+									// 		alert('Email sent successfully!');
+									// 	}, function(error) {
+									// 		alert('Failed to send email: ' + error.text);
+									// 	});
+								});
+							</script>
+						</div>
 					</footer>
 					<br /><br />
 			</div>
