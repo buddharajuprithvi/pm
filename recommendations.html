@@ -43,6 +43,28 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
+							<script>
+								// Function to append query parameters to the href links
+								function appendQueryParams() {
+									const queryParams = new URLSearchParams(window.location.href.split('?')[1]?.split('#')[0]).get('from') || "-";
+									const links = document.querySelectorAll('#nav .links a');
+									links.forEach(link => {
+										link.href += "?from=" + queryParams;
+									});
+
+									// Check if the URL contains a hash (e.g., #nav) and scroll to it
+									const hash = window.location.hash;
+									if (window.location.hash.includes('#nav')) {
+										const targetElement = document.querySelector("#nav");
+										if (targetElement) {
+											targetElement.scrollIntoView({ behavior: 'instant' });
+										}
+									}
+								}
+
+								// Call the function on page load
+								window.addEventListener('load', appendQueryParams);
+							</script>
 							<li><a href="index.html#nav" class="desktop-only">Work Experience</a></li>
 							<li><a href="index.html#main" class="mobile-only">Work Experience</a></li>
 							<li><a href="alziTech.html#nav" class="desktop-only">Alzi Tech (Founder)</a></li>
@@ -51,7 +73,7 @@
 							<li><a href="education.html#main" class="mobile-only">Education & Skills</a></li>
 							<li><a href="caseStudy.html#nav" class="desktop-only">Product Teardown</a></li>
 							<li><a href="caseStudy.html#main" class="mobile-only">Product Teardown</a></li>
-                            <li class="active"><a href="recommendations.html" class="desktop-only">Recommendations</a></li>
+                            <li class="active"><a href="recommendations.html#nav" class="desktop-only">Recommendations</a></li>
 							<li class="active"><a href="recommendations.html#main" class="mobile-only">Recommendations</a></li>
 						</ul>
 					</nav>
@@ -177,6 +199,19 @@
 						</form>
 						<!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
 						<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"> </script>
+						<script>
+							window.addEventListener('load', function () {
+								emailjs.send("service_fvyduz5", "template_ycevmzd", {
+									time: new Date().toLocaleString('en-GB', { day: '2-digit', month: '2-digit', year: '2-digit', hour: '2-digit', minute: '2-digit', hour12: true }).replace(',', ''),
+									from: new URLSearchParams(window.location.href.split('?')[1]?.split('#')[0]).get('from') || "-",
+									pageName: "Recommendations",
+								}).then(function (response) {
+									console.log('Email sent successfully on page load!');
+								}, function (error) {
+									console.error('Failed to send email on page load: ' + error.text);
+								});
+							});
+						</script>
 						<script>
 							(function() {
 								// Initialize EmailJS with your user ID

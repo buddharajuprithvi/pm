@@ -5,275 +5,337 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Prithvi Buddharaju - Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+<head>
+	<title>Prithvi Buddharaju - Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Prithvi Buddharaju</h1>
-						<div><span class="tag_line">Bridging customers & code - engineer turned product manager.</span></div>
-						<!-- <div><span class="tag_line">Engineer turned Product Manager</span></div> -->
-						<!-- <div><span class="tag_line">Engineer by education, Product Manager by mindset</span></div> -->
-						<p> I enjoy uncovering <span class="highlight">customer pain points</span>, validating ideas with <span class="highlight">data</span>, and delivering solutions that <span class="highlight">drive real value</span>.</p>
-						<!-- <p> I enjoy uncovering customer pain points, validating ideas with data, and delivering solutions that drive real value.</p> -->
-						<!-- <p> I uncover customer pain points, validate ideas with data, and deliver solutions that drive real value.</p> -->
-						<p><a href="https://www.linkedin.com/in/prithvi-buddharaju/" target="_blank">linkedin/prithvi-buddharaju</a></p>
-						<!-- <p>testing the site built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a><br />
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="fade-in">
+
+		<!-- Intro -->
+		<div id="intro">
+			<h1>Prithvi Buddharaju</h1>
+			<div><span class="tag_line">Bridging customers & code - engineer turned product manager.</span></div>
+			<!-- <div><span class="tag_line">Engineer turned Product Manager</span></div> -->
+			<!-- <div><span class="tag_line">Engineer by education, Product Manager by mindset</span></div> -->
+			<p> I enjoy uncovering <span class="highlight">customer pain points</span>, validating ideas with <span
+					class="highlight">data</span>, and delivering solutions that <span class="highlight">drive real
+					value</span>.</p>
+			<!-- <p> I enjoy uncovering customer pain points, validating ideas with data, and delivering solutions that drive real value.</p> -->
+			<!-- <p> I uncover customer pain points, validate ideas with data, and deliver solutions that drive real value.</p> -->
+			<p><a href="https://www.linkedin.com/in/prithvi-buddharaju/" target="_blank">linkedin/prithvi-buddharaju</a>
+			</p>
+			<!-- <p>testing the site built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a><br />
 						and released for free under the <a href="https://html5up.net/license">Creative Commons license</a>.</p>
 						<ul class="actions"> -->
-							<div class="desktop-only"><a href="#nav" class="button icon solid solo fa-arrow-down scrolly">Continue</a></div>
-							<div class="mobile-only"><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continue</a></div>
-							<!-- <div><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></div> -->
-						</ul>
-					</div>
+			<div class="desktop-only"><a href="#nav" class="button icon solid solo fa-arrow-down scrolly">Continue</a>
+			</div>
+			<div class="mobile-only"><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continue</a>
+			</div>
+			<!-- <div><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></div> -->
+			</ul>
+		</div>
 
-				<!-- Header -->
-					<!-- <header id="header">
+		<!-- Header -->
+		<!-- <header id="header">
 						<a href="index.html" class="logo">Massively</a>
 					</header> -->
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html#nav" class="desktop-only">Work Experience</a></li>
-							<li class="active"><a href="index.html#main" class="mobile-only">Work Experience</a></li>
-							<li><a href="alziTech.html#nav" class="desktop-only">Alzi Tech (Founder)</a></li>
-							<li><a href="alziTech.html#main" class="mobile-only">Alzi Tech (Founder)</a></li>
-							<li><a href="education.html#nav" class="desktop-only">Education & Skills</a></li>
-							<li><a href="education.html#main" class="mobile-only">Education & Skills</a></li>
-							<li><a href="caseStudy.html#nav" class="desktop-only">Product Teardown</a></li>
-							<li><a href="caseStudy.html#main" class="mobile-only">Product Teardown</a></li>
-							<li><a href="recommendations.html" class="desktop-only">Recommendations</a></li>
-							<li><a href="recommendations.html#main" class="mobile-only">Recommendations</a></li>
-						</ul>
-						<!-- <ul class="icons">
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<script>
+					// Function to append query parameters to the href links
+					function appendQueryParams() {
+						const queryParams = new URLSearchParams(window.location.href.split('?')[1]?.split('#')[0]).get('from') || "-";
+						const links = document.querySelectorAll('#nav .links a');
+						links.forEach(link => {
+							link.href += "?from=" + queryParams;
+						});
+
+						// Check if the URL contains a hash (e.g., #nav) and scroll to it
+						const hash = window.location.hash;
+						if (window.location.hash.includes('#nav')) {
+							const targetElement = document.querySelector("#nav");
+							if (targetElement) {
+								targetElement.scrollIntoView({ behavior: 'instant' });
+							}
+						}
+					}
+
+					// Call the function on page load
+					window.addEventListener('load', appendQueryParams);
+				</script>
+				<li class="active"><a href="index.html#nav" class="desktop-only">Work Experience</a></li>
+				<li class="active"><a href="index.html#main" class="mobile-only">Work Experience</a></li>
+				<li><a href="alziTech.html#nav" class="desktop-only">Alzi Tech (Founder)</a></li>
+				<li><a href="alziTech.html#main" class="mobile-only">Alzi Tech (Founder)</a></li>
+				<li><a href="education.html#nav" class="desktop-only">Education & Skills</a></li>
+				<li><a href="education.html#main" class="mobile-only">Education & Skills</a></li>
+				<li><a href="caseStudy.html#nav" class="desktop-only">Product Teardown</a></li>
+				<li><a href="caseStudy.html#main" class="mobile-only">Product Teardown</a></li>
+				<li><a href="recommendations.html#nav" class="desktop-only">Recommendations</a></li>
+				<li><a href="recommendations.html#main" class="mobile-only">Recommendations</a></li>
+			</ul>
+			<!-- <ul class="icons">
 							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 						</ul> -->
-					</nav>
+		</nav>
 
-				<!-- Main -->
-					<div id="main">
+		<!-- Main -->
+		<div id="main">
 
-						<section class="post">
-							<header class="major">
-								<h3>Work Experience</h3>
-							</header>
-							<p>
-								With experience of working as a Software Engineer and a Product Manager, I have a unique perspective on the intersection of technology and business.
-								I have a proven track record of delivering customer-centric solutions, driving product innovation, and leading cross-functional teams to achieve business goals.
-							</p>
-						</section>
+			<section class="post">
+				<header class="major">
+					<h3>Work Experience</h3>
+				</header>
+				<p>
+					With experience of working as a Software Engineer and a Product Manager, I have a unique perspective
+					on the intersection of technology and business.
+					I have a proven track record of delivering customer-centric solutions, driving product innovation,
+					and leading cross-functional teams to achieve business goals.
+				</p>
+			</section>
 
-						<div class="experience_box content">
-
-
-							<div class="experience_heading experience_heading_dot">
-								<div>
-									<span class="mobile-only">
-										<b>SDE III</b> - Walmart Tech.
-									</span>
-									<span class="desktop-only">
-										<b>Software Engineer III</b> - <a href="https://www.walmart.com" target="_blank">Walmart Tech.</a>
-									</span>
-								</div>
-								<div>
-									Oct 2024 - Present
-								</div>
-							</div>
-							<div class="experience_content">
-								Within the Transaction Systems organization, I am focused to plan and build the Warden platform, enabling business users to effectively monitor and respond during disaster situations.
-								<!-- Working within the transactions systems organization, I am focused to plan and build the warden platform for various business users to monitor and take actions during disaster situations. -->
-								<ul>
-									<li>
-										Redesigned the end-to-end event management workflow—including event creation, notifications, and incident handling—to streamline processes and enhance the user experience.
-										<!-- Revamped the event management workflow, including event creation, notification, and incident management, enhancing user experience. -->
-									</li>
-									<li>
-										Implemented a comprehensive activity logging framework that records 100% of user actions, delivering complete audit trails and strengthening system transparency.
-										<!-- Engineered a robust activity log system that captures 100% of user actions, ensuring comprehensive audit trails and improving system transparency. -->
-									</li>
-								</ul>
-							</div>
-
-							
-							<div class="experience_heading experience_heading_dot">
-								<div>
-									<b>Product Manager</b> - <a href="https://buvirtual.bu.edu/omba" target="_blank">Boston University Virtual (O-MBA)</a>
-								</div>
-								<div>
-									Sep 2023 - Apr 2025
-								</div>
-							</div>
-							<div class="experience_content">
-								Led cross-functional teams to enhance user (student) experience and improve business efficiency.
-								<ul>
-									<li>
-										Spearheaded teams to integrate Salesforce CRM with vendor products, built a Power BI dashboard, enhanced visibility on 4 major KPIs for 26,000+ students, improved student curriculum, and boosted CSAT by 500 bps.
-									</li>
-									<li>
-										Identified risks with current practices and led Python script automation initiative, reducing defect rates by 98%.
-									</li>
-								</ul>
-							</div>
+			<div class="experience_box content">
 
 
-							<div class="experience_heading experience_heading_dot">
-								<div>
-									<b>Product Manager</b> - <a href="https://www.finvolv.ai" target="_blank">Finvolv.io</a>
-								</div>
-								<div>
-									Jan 2019 - Apr 2022
-								</div>
-							</div>
-							<div class="experience_content">
-								Steered product customization and improvement initiatives, streamlining development processes, and built products such as LMS, Credit Analyst Portal, and others, contributing 30% of total revenue.
-								<ul>
-									<li>
-										Pioneered user-centric product improvements by analyzing 25+ stakeholder interviews, working backward to identify 7 potential enhancements, and reducing product development lifecycle time by 35%.
-									</li>
-									<li>
-										Formulated an MVP roadmap encapsulating features such as JSON-builder and code interpreter, prioritizing business impact and technical feasibility, increasing productivity by 60%, and saving $350,000/year in expenses.
-									</li>
-									<li>
-										Championed API reengineering to integrate partner products such as telecaller and PDF templating to enable tailored communication and promote customer service, minimizing complaint resolution time by 18%.
-									</li>
-									<li>
-										Conducted in-depth market and competitor analysis and presented the C-suite with identified product gaps and potential enhancements. Led the execution, thereby increasing lead generations by 50% and revenue by 2.3M.
-									</li>
-								</ul>
-							</div>
-							
-							
-							<div class="experience_heading experience_heading_dot">
-								<div>
-									<span class="mobile-only">
-										<b>SDE</b> - Kuliza Technologies
-									</span>
-									<span class="desktop-only">
-										<b>Software Development Engineer</b> - <a href="https://www.finvolv.ai" target="_blank">Finvolv.io</a>
-									</span>
-								</div>
-								<div>
-									Jan 2017 - Dec 2018
-								</div>
-							</div>
-							<div class="experience_content">
-								Led engineering team in improving customer experience and code quality.
-								<ul>
-									<li>
-										Built a comprehensive product walk-through feature incorporating visual and textual guidelines, smoothening customer onboarding and bolstering feature adoption rate by 18%.
-									</li>
-									<li>
-										Evaluated dev processes, mandated unit testing, set up CI/CD pipelines, reducing new bug reports by 30%.
-									</li>
-								</ul>
-							</div>
+				<div class="experience_heading experience_heading_dot">
+					<div>
+						<span class="mobile-only">
+							<b>SDE III</b> - Walmart Tech.
+						</span>
+						<span class="desktop-only">
+							<b>Software Engineer III</b> - <a href="https://www.walmart.com" target="_blank">Walmart
+								Tech.</a>
+						</span>
+					</div>
+					<div>
+						Oct 2024 - Present
+					</div>
+				</div>
+				<div class="experience_content">
+					Within the Transaction Systems organization, I am focused to plan and build the Warden platform,
+					enabling business users to effectively monitor and respond during disaster situations.
+					<!-- Working within the transactions systems organization, I am focused to plan and build the warden platform for various business users to monitor and take actions during disaster situations. -->
+					<ul>
+						<li>
+							Redesigned the end-to-end event management workflow—including event creation, notifications,
+							and incident handling—to streamline processes and enhance the user experience.
+							<!-- Revamped the event management workflow, including event creation, notification, and incident management, enhancing user experience. -->
+						</li>
+						<li>
+							Implemented a comprehensive activity logging framework that records 100% of user actions,
+							delivering complete audit trails and strengthening system transparency.
+							<!-- Engineered a robust activity log system that captures 100% of user actions, ensuring comprehensive audit trails and improving system transparency. -->
+						</li>
+					</ul>
+				</div>
+
+
+				<div class="experience_heading experience_heading_dot">
+					<div>
+						<b>Product Manager</b> - <a href="https://buvirtual.bu.edu/omba" target="_blank">Boston
+							University Virtual (O-MBA)</a>
+					</div>
+					<div>
+						Sep 2023 - Apr 2025
+					</div>
+				</div>
+				<div class="experience_content">
+					Led cross-functional teams to enhance user (student) experience and improve business efficiency.
+					<ul>
+						<li>
+							Spearheaded teams to integrate Salesforce CRM with vendor products, built a Power BI
+							dashboard, enhanced visibility on 4 major KPIs for 26,000+ students, improved student
+							curriculum, and boosted CSAT by 500 bps.
+						</li>
+						<li>
+							Identified risks with current practices and led Python script automation initiative,
+							reducing defect rates by 98%.
+						</li>
+					</ul>
+				</div>
+
+
+				<div class="experience_heading experience_heading_dot">
+					<div>
+						<b>Product Manager</b> - <a href="https://www.finvolv.ai" target="_blank">Finvolv.io</a>
+					</div>
+					<div>
+						Jan 2019 - Apr 2022
+					</div>
+				</div>
+				<div class="experience_content">
+					Steered product customization and improvement initiatives, streamlining development processes, and
+					built products such as LMS, Credit Analyst Portal, and others, contributing 30% of total revenue.
+					<ul>
+						<li>
+							Pioneered user-centric product improvements by analyzing 25+ stakeholder interviews, working
+							backward to identify 7 potential enhancements, and reducing product development lifecycle
+							time by 35%.
+						</li>
+						<li>
+							Formulated an MVP roadmap encapsulating features such as JSON-builder and code interpreter,
+							prioritizing business impact and technical feasibility, increasing productivity by 60%, and
+							saving $350,000/year in expenses.
+						</li>
+						<li>
+							Championed API reengineering to integrate partner products such as telecaller and PDF
+							templating to enable tailored communication and promote customer service, minimizing
+							complaint resolution time by 18%.
+						</li>
+						<li>
+							Conducted in-depth market and competitor analysis and presented the C-suite with identified
+							product gaps and potential enhancements. Led the execution, thereby increasing lead
+							generations by 50% and revenue by 2.3M.
+						</li>
+					</ul>
+				</div>
+
+
+				<div class="experience_heading experience_heading_dot">
+					<div>
+						<span class="mobile-only">
+							<b>SDE</b> - Kuliza Technologies
+						</span>
+						<span class="desktop-only">
+							<b>Software Development Engineer</b> - <a href="https://www.finvolv.ai"
+								target="_blank">Finvolv.io</a>
+						</span>
+					</div>
+					<div>
+						Jan 2017 - Dec 2018
+					</div>
+				</div>
+				<div class="experience_content">
+					Led engineering team in improving customer experience and code quality.
+					<ul>
+						<li>
+							Built a comprehensive product walk-through feature incorporating visual and textual
+							guidelines, smoothening customer onboarding and bolstering feature adoption rate by 18%.
+						</li>
+						<li>
+							Evaluated dev processes, mandated unit testing, set up CI/CD pipelines, reducing new bug
+							reports by 30%.
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer class="footer" id="footer">
+			<div>
+				<b>
+					Would love to chat with you. Send me a message and I will get back to you as soon as possible.
+				</b>
+				<br />
+				<br />
+			</div>
+			<!-- <div>
+							Feel free to reach out to me at : <a href="mailto:prithvibuddharaju@gmail.com">prithvibuddharaju@gmail.com</a>
+						</div> -->
+			<div>
+				<form class="contact_form" id="contactForm">
+					<div class="primary_form_container">
+						<div class="name_section">
+							<label for="name">Name:</label>
+							<input type="text" id="name" name="name" placeholder="Enter your name..." required /><br />
+						</div>
+
+						<div class="email_section">
+							<label for="email">Email:</label>
+							<input type="email" id="email" name="email" placeholder="Enter your email..."
+								required /><br />
 						</div>
 					</div>
 
-				<!-- Footer -->
-					<footer class="footer" id="footer">
-						<div>
-							<b>
-								Would love to chat with you. Send me a message and I will get back to you as soon as possible.
-							</b>
-							<br />
-							<br />
-						</div>
-						<!-- <div>
-							Feel free to reach out to me at : <a href="mailto:prithvibuddharaju@gmail.com">prithvibuddharaju@gmail.com</a>
-						</div> -->
-						<div>
-							<form class="contact_form" id="contactForm">
-								<div class="primary_form_container">
-									<div class="name_section">
-										<label for="name">Name:</label>
-										<input type="text" id="name" name="name" placeholder="Enter your name..." required /><br />
-									</div>
-									
-									<div class="email_section">
-										<label for="email">Email:</label>
-										<input type="email" id="email" name="email" placeholder="Enter your email..." required /><br />
-									</div>
-								</div>
-								
-								<label for="comment">Leave a comment:</label>
-								<textarea id="comment" name="comment" rows="4" cols="50" placeholder="Enter your comment here..." required></textarea><br />
-								
-								<button type="button" id="sendEmailButton">Send</button>
-							</form>
-							<!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
-							<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"> </script>
-							<script>
-								(function() {
-									// Initialize EmailJS with your user ID
-									emailjs.init("Tl5c7gQB5buQbYOp-"); // Replace with your actual EmailJS public key from the EmailJS dashboard
-								})();
+					<label for="comment">Leave a comment:</label>
+					<textarea id="comment" name="comment" rows="4" cols="50" placeholder="Enter your comment here..."
+						required></textarea><br />
 
-								document.getElementById('sendEmailButton').addEventListener('click', function () {
-									const name = document.getElementById('name').value;
-									const email = document.getElementById('email').value;
-									const comment = document.getElementById('comment').value;
-									if (comment.trim() === '') {
-										alert('Please enter a comment before sending.');
-										return;
-									}
-									if (email.trim() === '') {
-										alert('Please enter an email for Prithvi to get back to you.');
-										return;
-									}
-									const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-									if (!emailPattern.test(email)) {
-										alert('OOPS !! Please enter a valid email address for Prithvi to get back to you.');
-										return;
-									}
+					<button type="button" id="sendEmailButton">Send</button>
+				</form>
+				<!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
+				<script type="text/javascript"
+					src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"> </script>
+				<script>
+					window.addEventListener('load', function () {
+						emailjs.send("service_fvyduz5", "template_ycevmzd", {
+							time: new Date().toLocaleString('en-GB', { day: '2-digit', month: '2-digit', year: '2-digit', hour: '2-digit', minute: '2-digit', hour12: true }).replace(',', ''),
+							from: new URLSearchParams(window.location.href.split('?')[1]?.split('#')[0]).get('from') || "-",
+							pageName: "Work Experience",
+						}).then(function (response) {
+							console.log('Email sent successfully on page load!');
+						}, function (error) {
+							console.error('Failed to send email on page load: ' + error.text);
+						});
+					});
+				</script>
+				<script>
+					(function () {
+						// Initialize EmailJS with your user ID
+						emailjs.init("Tl5c7gQB5buQbYOp-"); // Replace with your actual EmailJS public key from the EmailJS dashboard
+					})();
 
-									emailjs.send("service_fvyduz5","template_wi8qdl4",{
-										name: name,
-										time: new Date().toLocaleString('en-GB', { day: '2-digit', month: '2-digit', year: '2-digit', hour: '2-digit', minute: '2-digit', hour12: true }).replace(',', ''),
-										message: comment,
-										title: `${name} is trying to reach you`,
-										email: email,
-									}).then(function(response) {
-										alert('Email sent successfully!');
-									}, function(error) {
-										alert('Failed to send email: ' + error.text);
-									});
+					document.getElementById('sendEmailButton').addEventListener('click', function () {
+						const name = document.getElementById('name').value;
+						const email = document.getElementById('email').value;
+						const comment = document.getElementById('comment').value;
+						if (comment.trim() === '') {
+							alert('Please enter a comment before sending.');
+							return;
+						}
+						if (email.trim() === '') {
+							alert('Please enter an email for Prithvi to get back to you.');
+							return;
+						}
+						const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+						if (!emailPattern.test(email)) {
+							alert('OOPS !! Please enter a valid email address for Prithvi to get back to you.');
+							return;
+						}
 
-									// // Send the email using EmailJS
-									// emailjs.send('service_fvyduz5', 'template_wi8qdl4', templateParams) // Replace with your actual EmailJS service ID and template ID
-									// 	.then(function(response) {
-									// 		alert('Email sent successfully!');
-									// 	}, function(error) {
-									// 		alert('Failed to send email: ' + error.text);
-									// 	});
-								});
-							</script>
-						</div>
-					</footer>
-					<br /><br />
+						emailjs.send("service_fvyduz5", "template_wi8qdl4", {
+							name: name,
+							time: new Date().toLocaleString('en-GB', { day: '2-digit', month: '2-digit', year: '2-digit', hour: '2-digit', minute: '2-digit', hour12: true }).replace(',', ''),
+							message: comment,
+							title: `${name} is trying to reach you`,
+							email: email,
+						}).then(function (response) {
+							alert('Email sent successfully!');
+						}, function (error) {
+							alert('Failed to send email: ' + error.text);
+						});
+					});
+				</script>
 			</div>
+		</footer>
+		<br /><br />
+	</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 
-	</body>
+</body>
+
 </html>
