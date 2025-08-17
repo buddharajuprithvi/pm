@@ -4635,6 +4635,7 @@ input, select, textarea {
 			#navPanelToggle {
 				font-size: 0.8rem;
 				padding: 0.25rem 1rem;
+				color: #ff6000;
 			}
 
 		}
@@ -4672,6 +4673,10 @@ input, select, textarea {
 
 			#navPanel .links li {
 				border-top: solid 2px #eeeeee;
+			}
+			
+			#navPanel .links li.hide_border_top {
+				border-top: 0;
 			}
 
 				#navPanel .links li a {
@@ -4758,7 +4763,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#navPanel {
-				padding: 2.5rem 1.75rem;
+				padding: 3.5rem 1.75rem;
 			}
 
 		}
