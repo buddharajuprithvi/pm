@@ -5,321 +5,353 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Elements Reference - Massively by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
 
-		<div id="intro">
-			<h1>Prithvi Buddharaju</h1>
-			<div><span class="tag_line">Bridging customers & code - engineer turned product manager.</span></div>
-			<!-- <div><span class="tag_line">Engineer turned Product Manager</span></div> -->
-			<!-- <div><span class="tag_line">Engineer by education, Product Manager by mindset</span></div> -->
-			<p> I enjoy uncovering <span class="highlight">customer pain points</span>, validating ideas with <span class="highlight">data</span>, and delivering solutions that <span class="highlight">drive real value</span>.</p>
-			<!-- <p> I enjoy uncovering customer pain points, validating ideas with data, and delivering solutions that drive real value.</p> -->
-			<!-- <p> I uncover customer pain points, validate ideas with data, and deliver solutions that drive real value.</p> -->
-			<p><a href="https://www.linkedin.com/in/prithvi-buddharaju/" target="_blank">linkedin/prithvi-buddharaju</a></p>
-			<!-- <p>testing the site built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a><br />
+<head>
+	<title>Elements Reference - Massively by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<div id="intro">
+		<h1>Prithvi Buddharaju</h1>
+		<div><span class="tag_line">Bridging customers & code - engineer turned product manager.</span></div>
+		<!-- <div><span class="tag_line">Engineer turned Product Manager</span></div> -->
+		<!-- <div><span class="tag_line">Engineer by education, Product Manager by mindset</span></div> -->
+		<p> I enjoy uncovering <span class="highlight">customer pain points</span>, validating ideas with <span
+				class="highlight">data</span>, and delivering solutions that <span class="highlight">drive real
+				value</span>.</p>
+		<!-- <p> I enjoy uncovering customer pain points, validating ideas with data, and delivering solutions that drive real value.</p> -->
+		<!-- <p> I uncover customer pain points, validate ideas with data, and deliver solutions that drive real value.</p> -->
+		<p><a href="https://www.linkedin.com/in/prithvi-buddharaju/" target="_blank">linkedin/prithvi-buddharaju</a></p>
+		<!-- <p>testing the site built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a><br />
 			and released for free under the <a href="https://html5up.net/license">Creative Commons license</a>.</p>
 			<ul class="actions"> -->
-				<div class="desktop-only"><a href="#nav" class="button icon solid solo fa-arrow-down scrolly">Continue</a></div>
-							<div class="mobile-only"><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continue</a></div>
-				<!-- <div><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></div> -->
-			</ul>
-		</div>
+		<div class="desktop-only"><a href="#nav" class="button icon solid solo fa-arrow-down scrolly">Continue</a></div>
+		<div class="mobile-only"><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continue</a></div>
+		<!-- <div><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></div> -->
+		</ul>
+	</div>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-				<!-- Header -->
-					<!-- <header id="header">
+		<!-- Header -->
+		<!-- <header id="header">
 						<a href="index.html" class="logo">Massively</a>
 					</header> -->
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<script>
-								// Function to append query parameters to the href links
-								function appendQueryParams() {
-									const queryParams = new URLSearchParams(window.location.href.split('?')[1]?.split('#')[0]).get('from') || "-";
-									const navLink = document.querySelectorAll('#nav .links a');
-									const mainLink = document.querySelectorAll('#navPanel .links a');
-									[...navLink, ...mainLink].forEach(link => {
-										link.href += "?from=" + queryParams;
-									});
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<script>
+					// Function to append query parameters to the href links
+					function appendQueryParams() {
+						const queryParams = new URLSearchParams(window.location.href.split('?')[1]?.split('#')[0]).get('from') || "-";
+						const navLink = document.querySelectorAll('#nav .links a');
+						const mainLink = document.querySelectorAll('#navPanel .links a');
+						[...navLink, ...mainLink].forEach(link => {
+							link.href += "?from=" + queryParams;
+						});
 
-									// Check if the URL contains a hash (e.g., #nav) and scroll to it
-									const hash = window.location.hash;
-									if (window.location.hash.includes('#nav')) {
-										const targetElement = document.querySelector("#nav");
-										if (targetElement) {
-											targetElement.scrollIntoView({ behavior: 'instant' });
-										}
-									}
-									if (window.location.hash.includes('#main')) {
-										const targetElement = document.querySelector("#main");
-										if (targetElement) {
-											targetElement.scrollIntoView({ behavior: 'instant' });
-										}
-									}
-								}
+						// Check if the URL contains a hash (e.g., #nav) and scroll to it
+						const hash = window.location.hash;
+						if (window.location.hash.includes('#nav')) {
+							const targetElement = document.querySelector("#nav");
+							if (targetElement) {
+								targetElement.scrollIntoView({ behavior: 'instant' });
+							}
+						}
+						if (window.location.hash.includes('#main')) {
+							const targetElement = document.querySelector("#main");
+							if (targetElement) {
+								targetElement.scrollIntoView({ behavior: 'instant' });
+							}
+						}
+					}
 
-								// Call the function on page load
-								window.addEventListener('load', appendQueryParams);
-							</script>
-							<li class="hide_border_top"><a href="index.html#nav" class="desktop-only">Work Experience</a></li>
-							<li class="hide_border_top"><a href="index.html#main" class="mobile-only">Work Experience</a></li>
-							<li><a href="alziTech.html#nav" class="desktop-only">Alzi Tech (Founder)</a></li>
-							<li><a href="alziTech.html#main" class="mobile-only">Alzi Tech (Founder)</a></li>
-							<li><a href="education.html#nav" class="desktop-only">Education & Skills</a></li>
-							<li><a href="education.html#main" class="mobile-only">Education & Skills</a></li>
-							<li class="active"><a href="caseStudy.html#nav" class="desktop-only">Product Teardown</a></li>
-							<li class="active"><a href="caseStudy.html#main" class="mobile-only">Product Teardown</a></li>
-							<li><a href="recommendations.html#nav" class="desktop-only">Recommendations</a></li>
-							<li><a href="recommendations.html#main" class="mobile-only">Recommendations</a></li>
-						</ul>
-					</nav>
+					// Call the function on page load
+					window.addEventListener('load', appendQueryParams);
+				</script>
+				<li class="hide_border_top"><a href="index.html#nav" class="desktop-only">Work Experience</a></li>
+				<li class="hide_border_top"><a href="index.html#main" class="mobile-only">Work Experience</a></li>
+				<li><a href="alziTech.html#nav" class="desktop-only">Alzi Tech (Founder)</a></li>
+				<li><a href="alziTech.html#main" class="mobile-only">Alzi Tech (Founder)</a></li>
+				<li><a href="education.html#nav" class="desktop-only">Education & Skills</a></li>
+				<li><a href="education.html#main" class="mobile-only">Education & Skills</a></li>
+				<li class="active"><a href="caseStudy.html#nav" class="desktop-only">Product Teardown</a></li>
+				<li class="active"><a href="caseStudy.html#main" class="mobile-only">Product Teardown</a></li>
+				<li><a href="recommendations.html#nav" class="desktop-only">Recommendations</a></li>
+				<li><a href="recommendations.html#main" class="mobile-only">Recommendations</a></li>
+			</ul>
+		</nav>
 
-				<!-- Main -->
-					<div id="main">
+		<!-- Main -->
+		<div id="main">
 
-						<section class="post">
-							<header class="major">
-								<h3>Product Teardown</h3>
-							</header>
-							<p class="justify">
-								Following my passion for product management, I have worked on several case studies to hone my skills and apply my knowledge in real-world scenarios. Here are some of the case studies I have worked on:
-							</p>
-						</section>
-						<section class="post">
-							<header>
-								<p class="case_study_header">
-									<a href="https://www.splitwise.com/" target="_blank">
-										<!-- Splitwise Inc. -->
-										www.splitwise.com
-									</a>
-								</p>
-							</header>
-							<div class="mobile_view_style case_container">
-								<span class="image left">
-									<div>
-										<a href="cases/Splitwise_Product_Teardown.pdf" target="_blank" class="embed-link">
-											<embed width="191" height="269px" name="plugin" src="cases/Splitwise_Product_Teardown.pdf" type="application/pdf" />
-										</a>
-									</div>
-									<div class="center">
-										<a href="cases/Splitwise_Product_Teardown.pdf" target="_blank">
-											Link
-										</a>
-									</div>
-								</span>
-								<div class="justify">
-									I have conducted an in-depth product teardown of Splitwise, mapping the end-to-end user journey, identifying friction points, and analyzing strategic levers for improving engagement and retention. Through my research and competitive benchmarking, I have come up with a few potential high-impact initiatives (along with sample Figma screens and user journeys) to enhance the user experience, including: 
-									<ol>
-										<li>
-											Launching a mobile-native itemized expenses feature
-										</li>
-										<li>
-											Integrating in-app payments to retain users within the platform
-										</li>
-										<li>
-											Enabling bill scanning with image processing for automated transaction entry
-										</li>
-										<li>
-											Linking bank transaction data to streamline expense recall.
-										</li>
-									</ol>
-								</div>
-							</div>
-						</section>
-						<section class="post">
-							<header>
-								<p class="case_study_header">
-									<a href="https://www.myfitnesspal.com/" target="_blank">
-										<!-- MyFitnessPal, Inc. -->
-										www.myfitnesspal.com
-									</a>
-								</p>
-							</header>
-							<div class="mobile_view_style case_container">
-								<span class="image left">
-									<div>
-										<a href="cases/MyFitnessPal.pdf" target="_blank" class="embed-link">
-											<embed width="191" height="269px" name="plugin" src="cases/MyFitnessPal.pdf" type="application/pdf" />
-										</a>
-									</div>
-									<div class="center">
-										<a href="cases/MyFitnessPal.pdf" target="_blank">
-											Link
-										</a>
-									</div>
-								</span>
-								<div class="justify">
-									A product teardown of MyFitnessPal, evaluating market dynamics, competitive landscape, and target user segments to identify strategic opportunities for increasing engagement and retention. Leveraging user insights and gap analysis, I have come up with three high-impact initiatives: 
-									
-									<ol>
-										<li>
-											Integrating partner restaurant menu data for accurate calorie tracking
-										</li>
-										<li>
-											Implementing culturally localized and searchable recipe recommendations
-										</li>
-										<li>
-											Enabling in-gym equipment guidance through NFC/QR code integration.
-										</li>
-									</ol>
-								</div>
-							</div>
-						</section>
+			<section class="post">
+				<header class="major">
+					<h3>Product Teardown</h3>
+				</header>
+				<p class="justify">
+					Following my passion for product management, I have worked on several case studies to hone my skills
+					and apply my knowledge in real-world scenarios. Here are some of the case studies I have worked on:
+				</p>
+			</section>
+			<section class="post">
+				<header>
+					<p class="case_study_header">
+						<a href="https://www.splitwise.com/" target="_blank">
+							<!-- Splitwise Inc. -->
+							www.splitwise.com
+						</a>
+					</p>
+				</header>
+				<div class="mobile_view_style case_container">
+					<span class="image left">
+						<div>
+							<a href="cases/Splitwise_Product_Teardown.pdf" target="_blank" class="embed-link">
+								<embed width="191" height="269px" name="plugin"
+									src="cases/Splitwise_Product_Teardown.pdf" type="application/pdf" />
+							</a>
+						</div>
+						<div class="center">
+							<a href="cases/Splitwise_Product_Teardown.pdf" target="_blank">
+								Link
+							</a>
+						</div>
+					</span>
+					<div class="justify">
+						I have conducted an in-depth product teardown of Splitwise, mapping the end-to-end user journey,
+						identifying friction points, and analyzing strategic levers for improving engagement and
+						retention. Through my research and competitive benchmarking, I have come up with a few potential
+						high-impact initiatives (along with sample Figma screens and user journeys) to enhance the user
+						experience, including:
+						<ol>
+							<li>
+								Launching a mobile-native itemized expenses feature
+							</li>
+							<li>
+								Integrating in-app payments to retain users within the platform
+							</li>
+							<li>
+								Enabling bill scanning with image processing for automated transaction entry
+							</li>
+							<li>
+								Linking bank transaction data to streamline expense recall.
+							</li>
+						</ol>
 					</div>
+				</div>
+			</section>
+			<section class="post">
+				<header>
+					<p class="case_study_header">
+						<a href="https://www.myfitnesspal.com/" target="_blank">
+							<!-- MyFitnessPal, Inc. -->
+							www.myfitnesspal.com
+						</a>
+					</p>
+				</header>
+				<div class="mobile_view_style case_container">
+					<span class="image left">
+						<div>
+							<a href="cases/MyFitnessPal.pdf" target="_blank" class="embed-link">
+								<embed width="191" height="269px" name="plugin" src="cases/MyFitnessPal.pdf"
+									type="application/pdf" />
+							</a>
+						</div>
+						<div class="center">
+							<a href="cases/MyFitnessPal.pdf" target="_blank">
+								Link
+							</a>
+						</div>
+					</span>
+					<div class="justify">
+						A product teardown of MyFitnessPal, evaluating market dynamics, competitive landscape, and
+						target user segments to identify strategic opportunities for increasing engagement and
+						retention. Leveraging user insights and gap analysis, I have come up with three high-impact
+						initiatives:
 
-				<!-- Footer -->
-				<footer class="footer" id="footer">
-					<div>
-						<b>
-							Would love to chat with you. Send me a message and I will get back to you as soon as possible.
-						</b>
-						<br />
-						<br />
+						<ol>
+							<li>
+								Integrating partner restaurant menu data for accurate calorie tracking
+							</li>
+							<li>
+								Implementing culturally localized and searchable recipe recommendations
+							</li>
+							<li>
+								Enabling in-gym equipment guidance through NFC/QR code integration.
+							</li>
+						</ol>
 					</div>
-					<!-- <div>
+				</div>
+			</section>
+		</div>
+
+		<!-- Footer -->
+		<footer class="footer" id="footer">
+			<div>
+				<b>
+					Would love to chat with you. Send me a message and I will get back to you as soon as possible.
+				</b>
+				<br />
+				<br />
+			</div>
+			<!-- <div>
 						Feel free to reach out to me at : <a href="mailto:prithvibuddharaju@gmail.com">prithvibuddharaju@gmail.com</a>
 					</div> -->
-					<div>
-						<form class="contact_form" id="contactForm">
-							<div class="primary_form_container">
-								<div class="name_section">
-									<label for="name">Name:</label>
-									<input type="text" id="name" name="name" placeholder="Enter your name..." required /><br />
-								</div>
-								
-								<div class="email_section">
-									<label for="email">Email:</label>
-									<input type="email" id="email" name="email" placeholder="Enter your email..." required /><br />
-								</div>
-							</div>
-							
-							<label for="comment">Leave a comment:</label>
-							<textarea id="comment" name="comment" rows="4" cols="50" placeholder="Enter your comment here..." required></textarea><br />
-							
-							<button type="button" id="sendEmailButton">Send</button>
-						</form>
-						<!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
-						<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"> </script>
-						<script>
-							window.addEventListener('load', function () {
-								emailjs.send("service_fvyduz5", "template_ycevmzd", {
-									time: new Date().toLocaleString('en-GB', { day: '2-digit', month: '2-digit', year: '2-digit', hour: '2-digit', minute: '2-digit', hour12: true }).replace(',', ''),
-									from: new URLSearchParams(window.location.href.split('?')[1]?.split('#')[0]).get('from') || "-",
-									pageName: "Case Study",
-								}).then(function (response) {
-									console.log('Email sent successfully on page load!');
-								}, function (error) {
-									console.error('Failed to send email on page load: ' + error.text);
-								});
-							});
-						</script>
-						<script>
-							(function() {
-								// Initialize EmailJS with your user ID
-								emailjs.init("Tl5c7gQB5buQbYOp-"); // Replace with your actual EmailJS public key from the EmailJS dashboard
-							})();
+			<div>
+				<form class="contact_form" id="contactForm">
+					<div class="primary_form_container">
+						<div class="name_section">
+							<label for="name">Name:</label>
+							<input type="text" id="name" name="name" placeholder="Enter your name..." required /><br />
+						</div>
 
-							document.getElementById('sendEmailButton').addEventListener('click', function () {
-								const name = document.getElementById('name').value;
-								const email = document.getElementById('email').value;
-								const comment = document.getElementById('comment').value;
-								if (comment.trim() === '') {
-									alert('Please enter a comment before sending.');
-									return;
-								}
-								if (email.trim() === '') {
-									alert('Please enter an email for Prithvi to get back to you.');
-									return;
-								}
-								const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-								if (!emailPattern.test(email)) {
-									alert('OOPS !! Please enter a valid email address for Prithvi to get back to you.');
-									return;
-								}
-
-								emailjs.send("service_fvyduz5","template_wi8qdl4",{
-									name: name,
-									time: new Date().toLocaleString('en-GB', { day: '2-digit', month: '2-digit', year: '2-digit', hour: '2-digit', minute: '2-digit', hour12: true }).replace(',', ''),
-									message: comment,
-									title: `${name} is trying to reach you`,
-									email: email,
-								}).then(function(response) {
-									alert('Email sent successfully!');
-								}, function(error) {
-									alert('Failed to send email: ' + error.text);
-								});
-
-								// // Send the email using EmailJS
-								// emailjs.send('service_fvyduz5', 'template_wi8qdl4', templateParams) // Replace with your actual EmailJS service ID and template ID
-								// 	.then(function(response) {
-								// 		alert('Email sent successfully!');
-								// 	}, function(error) {
-								// 		alert('Failed to send email: ' + error.text);
-								// 	});
-							});
-						</script>
+						<div class="email_section">
+							<label for="email">Email:</label>
+							<input type="email" id="email" name="email" placeholder="Enter your email..."
+								required /><br />
+						</div>
 					</div>
-				</footer>
-				<br /><br />
 
+					<label for="comment">Leave a comment:</label>
+					<textarea id="comment" name="comment" rows="4" cols="50" placeholder="Enter your comment here..."
+						required></textarea><br />
+
+					<button type="button" id="sendEmailButton">Send</button>
+				</form>
+				<!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
+				<script type="text/javascript"
+					src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"> </script>
+				<script>
+					window.addEventListener('load', function () {
+						emailjs.send("service_fvyduz5", "template_ycevmzd", {
+							time: new Date().toLocaleString('en-GB', { day: '2-digit', month: '2-digit', year: '2-digit', hour: '2-digit', minute: '2-digit', hour12: true }).replace(',', ''),
+							from: new URLSearchParams(window.location.href.split('?')[1]?.split('#')[0]).get('from') || "-",
+							pageName: "Case Study",
+						}).then(function (response) {
+							console.log('Email sent successfully on page load!');
+						}, function (error) {
+							console.error('Failed to send email on page load: ' + error.text);
+						});
+					});
+				</script>
+				<script>
+					(function () {
+						// Initialize EmailJS with your user ID
+						emailjs.init("Tl5c7gQB5buQbYOp-"); // Replace with your actual EmailJS public key from the EmailJS dashboard
+					})();
+
+					document.getElementById('sendEmailButton').addEventListener('click', function () {
+						const name = document.getElementById('name').value;
+						const email = document.getElementById('email').value;
+						const comment = document.getElementById('comment').value;
+						if (comment.trim() === '') {
+							alert('Please enter a comment before sending.');
+							return;
+						}
+						if (email.trim() === '') {
+							alert('Please enter an email for Prithvi to get back to you.');
+							return;
+						}
+						const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+						if (!emailPattern.test(email)) {
+							alert('OOPS !! Please enter a valid email address for Prithvi to get back to you.');
+							return;
+						}
+
+						emailjs.send("service_fvyduz5", "template_wi8qdl4", {
+							name: name,
+							time: new Date().toLocaleString('en-GB', { day: '2-digit', month: '2-digit', year: '2-digit', hour: '2-digit', minute: '2-digit', hour12: true }).replace(',', ''),
+							message: comment,
+							title: `${name} is trying to reach you`,
+							email: email,
+						}).then(function (response) {
+							alert('Email sent successfully!');
+						}, function (error) {
+							alert('Failed to send email: ' + error.text);
+						});
+
+						// // Send the email using EmailJS
+						// emailjs.send('service_fvyduz5', 'template_wi8qdl4', templateParams) // Replace with your actual EmailJS service ID and template ID
+						// 	.then(function(response) {
+						// 		alert('Email sent successfully!');
+						// 	}, function(error) {
+						// 		alert('Failed to send email: ' + error.text);
+						// 	});
+					});
+				</script>
 			</div>
+		</footer>
+		<br /><br />
 
-		<!-- Add the navPanelToggle button -->
-		<a href="#navPanel" id="navPanelToggle">Menu</a>
+	</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<!-- Add the navPanelToggle button -->
+	<a href="#navPanel" id="navPanelToggle">Menu</a>
 
-		<style>
-			/* Add this CSS to your main stylesheet or within a <style> tag */
-			.embed-link {
-				display: inline-block;
-				width: 191px; /* Match the width of the embed */
-				height: 269px; /* Match the height of the embed */
-				cursor: pointer;
-				position: relative;
-			}
-			.embed-link embed {
-				pointer-events: none; /* Prevent interaction with the embed itself */
-			}
-		</style>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 
-		<style>
-/* Fix for making the entire embed clickable */
-.embed-link {
-    display: inline-block;
-    width: 191px; /* Match the width of the embed */
-    height: 269px; /* Match the height of the embed */
-    position: relative; /* Ensure proper positioning */
-}
-.embed-link:hover {
-   /* border: 1px solid #ff6000; */
-   /* box-shadow: 0px 4px 8px #ff6000; */
-   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-.embed-link embed {
-    pointer-events: none; /* Disable interaction with the embed */
-    width: 100%; /* Ensure the embed fills the a tag */
-    height: 100%; /* Ensure the embed fills the a tag */
-}
-</style>
+	<style>
+		/* Add this CSS to your main stylesheet or within a <style> tag */
+		.embed-link {
+			display: inline-block;
+			width: 191px;
+			/* Match the width of the embed */
+			height: 269px;
+			/* Match the height of the embed */
+			cursor: pointer;
+			position: relative;
+		}
 
-	</body>
+		.embed-link embed {
+			pointer-events: none;
+			/* Prevent interaction with the embed itself */
+		}
+	</style>
+
+	<style>
+		/* Fix for making the entire embed clickable */
+		.embed-link {
+			display: inline-block;
+			width: 191px;
+			/* Match the width of the embed */
+			height: 269px;
+			/* Match the height of the embed */
+			position: relative;
+			/* Ensure proper positioning */
+		}
+
+		.embed-link:hover {
+			/* border: 1px solid #ff6000; */
+			/* box-shadow: 0px 4px 8px #ff6000; */
+			box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+		}
+
+		.embed-link embed {
+			pointer-events: none;
+			/* Disable interaction with the embed */
+			width: 100%;
+			/* Ensure the embed fills the a tag */
+			height: 100%;
+			/* Ensure the embed fills the a tag */
+		}
+	</style>
+
+</body>
+
 </html>

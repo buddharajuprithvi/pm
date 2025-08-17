@@ -5,98 +5,104 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Generic Page - Massively by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
 
-		<div id="intro">
-			<h1>Prithvi Buddharaju</h1>
-			<div><span class="tag_line">Bridging customers & code - engineer turned product manager.</span></div>
-			<!-- <div><span class="tag_line">Engineer at heart, Product Manager at mind</span></div> -->
-			<!-- <div><span class="tag_line">Engineer turned Product Manager</span></div> -->
-			<!-- <div><span class="tag_line">Engineer by education, Product Manager by mindset</span></div> -->
-			<p> I enjoy uncovering <span class="highlight">customer pain points</span>, validating ideas with <span class="highlight">data</span>, and delivering solutions that <span class="highlight">drive real value</span>.</p>
-			<!-- <p> I enjoy uncovering customer pain points, validating ideas with data, and delivering solutions that drive real value.</p> -->
-			<!-- <p> I uncover customer pain points, validate ideas with data, and deliver solutions that drive real value.</p> -->
-			<p><a href="https://www.linkedin.com/in/prithvi-buddharaju/" target="_blank">linkedin/prithvi-buddharaju</a></p>
-			<!-- <p>testing the site built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a><br />
+<head>
+	<title>Generic Page - Massively by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<div id="intro">
+		<h1>Prithvi Buddharaju</h1>
+		<div><span class="tag_line">Bridging customers & code - engineer turned product manager.</span></div>
+		<!-- <div><span class="tag_line">Engineer at heart, Product Manager at mind</span></div> -->
+		<!-- <div><span class="tag_line">Engineer turned Product Manager</span></div> -->
+		<!-- <div><span class="tag_line">Engineer by education, Product Manager by mindset</span></div> -->
+		<p> I enjoy uncovering <span class="highlight">customer pain points</span>, validating ideas with <span
+				class="highlight">data</span>, and delivering solutions that <span class="highlight">drive real
+				value</span>.</p>
+		<!-- <p> I enjoy uncovering customer pain points, validating ideas with data, and delivering solutions that drive real value.</p> -->
+		<!-- <p> I uncover customer pain points, validate ideas with data, and deliver solutions that drive real value.</p> -->
+		<p><a href="https://www.linkedin.com/in/prithvi-buddharaju/" target="_blank">linkedin/prithvi-buddharaju</a></p>
+		<!-- <p>testing the site built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a><br />
 			and released for free under the <a href="https://html5up.net/license">Creative Commons license</a>.</p>
 			<ul class="actions"> -->
-				<div class="desktop-only"><a href="#nav" class="button icon solid solo fa-arrow-down scrolly">Continue</a></div>
-							<div class="mobile-only"><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continue</a></div>
-				<!-- <div><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></div> -->
-			</ul>
-		</div>
+		<div class="desktop-only"><a href="#nav" class="button icon solid solo fa-arrow-down scrolly">Continue</a></div>
+		<div class="mobile-only"><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continue</a></div>
+		<!-- <div><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></div> -->
+		</ul>
+	</div>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-				<!-- Header -->
-					<!-- <header id="header">
+		<!-- Header -->
+		<!-- <header id="header">
 						<a href="index.html" class="logo">Massively</a>
-					</header> --> 
+					</header> -->
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<script>
-								// Function to append query parameters to the href links
-								function appendQueryParams() {
-									const queryParams = new URLSearchParams(window.location.href.split('?')[1]?.split('#')[0]).get('from') || "-";
-									const navLink = document.querySelectorAll('#nav .links a');
-									const mainLink = document.querySelectorAll('#navPanel .links a');
-									[...navLink, ...mainLink ].forEach(link => {
-										link.href += "?from=" + queryParams;
-									});
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<script>
+					// Function to append query parameters to the href links
+					function appendQueryParams() {
+						const queryParams = new URLSearchParams(window.location.href.split('?')[1]?.split('#')[0]).get('from') || "-";
+						const navLink = document.querySelectorAll('#nav .links a');
+						const mainLink = document.querySelectorAll('#navPanel .links a');
+						[...navLink, ...mainLink].forEach(link => {
+							link.href += "?from=" + queryParams;
+						});
 
-									// Check if the URL contains a hash (e.g., #nav) and scroll to it
-									const hash = window.location.hash;
-									if (window.location.hash.includes('#nav')) {
-										const targetElement = document.querySelector("#nav");
-										if (targetElement) {
-											targetElement.scrollIntoView({ behavior: 'instant' });
-										}
-									}
-									if (window.location.hash.includes('#main')) {
-										const targetElement = document.querySelector("#main");
-										if (targetElement) {
-											targetElement.scrollIntoView({ behavior: 'instant' });
-										}
-									}
-								}
+						// Check if the URL contains a hash (e.g., #nav) and scroll to it
+						const hash = window.location.hash;
+						if (window.location.hash.includes('#nav')) {
+							const targetElement = document.querySelector("#nav");
+							if (targetElement) {
+								targetElement.scrollIntoView({ behavior: 'instant' });
+							}
+						}
+						if (window.location.hash.includes('#main')) {
+							const targetElement = document.querySelector("#main");
+							if (targetElement) {
+								targetElement.scrollIntoView({ behavior: 'instant' });
+							}
+						}
+					}
 
-								// Call the function on page load
-								window.addEventListener('load', appendQueryParams);
-							</script>
+					// Call the function on page load
+					window.addEventListener('load', appendQueryParams);
+				</script>
 
-							<li class="hide_border_top"><a href="index.html#nav" class="desktop-only">Work Experience</a></li>
-							<li class="hide_border_top"><a href="index.html#main" class="mobile-only">Work Experience</a></li>
-							<li class="active"><a href="alziTech.html#nav" class="desktop-only">Alzi Tech (Founder)</a></li>
-							<li class="active"><a href="alziTech.html#main" class="mobile-only">Alzi Tech (Founder)</a></li>
-							<li><a href="education.html#nav" class="desktop-only">Education & Skills</a></li>
-							<li><a href="education.html#main" class="mobile-only">Education & Skills</a></li>
-							<li><a href="caseStudy.html#nav" class="desktop-only">Product Teardown</a></li>
-							<li><a href="caseStudy.html#main" class="mobile-only">Product Teardown</a></li>
-							<li><a href="recommendations.html#nav" class="desktop-only">Recommendations</a></li>
-							<li><a href="recommendations.html#main" class="mobile-only">Recommendations</a></li>
-						</ul>
-						<!-- <ul class="icons">
+				<li class="hide_border_top"><a href="index.html#nav" class="desktop-only">Work Experience</a></li>
+				<li class="hide_border_top"><a href="index.html#main" class="mobile-only">Work Experience</a></li>
+				<li class="active"><a href="alziTech.html#nav" class="desktop-only">Alzi Tech (Founder)</a></li>
+				<li class="active"><a href="alziTech.html#main" class="mobile-only">Alzi Tech (Founder)</a></li>
+				<li><a href="education.html#nav" class="desktop-only">Education & Skills</a></li>
+				<li><a href="education.html#main" class="mobile-only">Education & Skills</a></li>
+				<li><a href="caseStudy.html#nav" class="desktop-only">Product Teardown</a></li>
+				<li><a href="caseStudy.html#main" class="mobile-only">Product Teardown</a></li>
+				<li><a href="recommendations.html#nav" class="desktop-only">Recommendations</a></li>
+				<li><a href="recommendations.html#main" class="mobile-only">Recommendations</a></li>
+			</ul>
+			<!-- <ul class="icons">
 							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 						</ul> -->
-					</nav>
+		</nav>
 
-				<!-- Main -->
-					<div id="main">
+		<!-- Main -->
+		<div id="main">
 
-						<!-- <p>
+			<!-- <p>
 							Alzi Tech: Bridging Legacy Industries with the Digital World
 							<br />
 							Recognizing a significant gap between the digital landscape and traditional industries 
@@ -113,222 +119,255 @@
 							improving operational efficiency and accelerating their digital adoption.
 						</p> -->
 
-						<!-- Post -->
-							<section class="post">
-								<header class="major">
-									<h3>Alzi Tech</h3>
-									<p>Bridging Legacy Industries with the Digital World</p>
-								</header>
-								<p>The idea of starting Alzi Tech was to address the digital gap in traditional sectors like construction and healthcare.
-									Facing low technical literacy and resistance to change, we built a modular, configurable platform designed for ease of use.
-									Leading a team of six, we delivered scalable solutions to clients such as <b>SriKanya Steels</b> and <b>Susrutha Hospitals</b>, 
-									improving operational efficiency and accelerating their digital adoption.</p>
-							</section>
-							<section class="post">
-								<header class="major">
-									<!-- <span class="date sri_kanya_date">October 2018 - March 2022</span> -->
-									<h1>Srikanya Steels</h1>
-									<p><a href="https://www.srikanyasteels.com" target="_blank">www.srikanyasteels.com</a></p>
-									<h3>E-Commerce + ERP Platform for Construction Materials</h3>
-									<!-- <p>I led the development of a comprehensive B2B e-commerce and operations platform for Srikanya Steels, focused on solving long-standing inefficiencies in the construction materials supply chain. Customers previously faced challenges such as opaque pricing, manual quotation processes, limited product visibility, and fragmented communication across order, payment, and delivery stages.
+			<!-- Post -->
+			<section class="post">
+				<header class="major">
+					<h3>Alzi Tech</h3>
+					<p>Bridging Legacy Industries with the Digital World</p>
+				</header>
+				<p>The idea of starting Alzi Tech was to address the digital gap in traditional sectors like
+					construction and healthcare.
+					Facing low technical literacy and resistance to change, we built a modular, configurable platform
+					designed for ease of use.
+					Leading a team of six, we delivered scalable solutions to clients such as <b>SriKanya Steels</b> and
+					<b>Susrutha Hospitals</b>,
+					improving operational efficiency and accelerating their digital adoption.</p>
+			</section>
+			<section class="post">
+				<header class="major">
+					<!-- <span class="date sri_kanya_date">October 2018 - March 2022</span> -->
+					<h1>Srikanya Steels</h1>
+					<p><a href="https://www.srikanyasteels.com" target="_blank">www.srikanyasteels.com</a></p>
+					<h3>E-Commerce + ERP Platform for Construction Materials</h3>
+					<!-- <p>I led the development of a comprehensive B2B e-commerce and operations platform for Srikanya Steels, focused on solving long-standing inefficiencies in the construction materials supply chain. Customers previously faced challenges such as opaque pricing, manual quotation processes, limited product visibility, and fragmented communication across order, payment, and delivery stages.
 										To address these issues, we built a robust, data-driven web platform (www.srikanyasteels.com) that streamlined the entire procurement journey—from product discovery and cart management to dynamic quotation generation, digital order approvals, and dispatch tracking. The platform featured granular filtering for steel and cement products, real-time inventory management, and automated workflows to reduce turnaround time.
 										A key differentiator was our analytics-driven back office system, which provided detailed dashboards with order cycle tracking, sales summaries, credit/payment insights, and profit/loss metrics. These insights empowered the business team to make faster, more informed decisions, and significantly improved transparency for customers.
 										The result: reduced manual effort, improved operational efficiency, and a scalable foundation for digital procurement in the construction industry.</p> -->
-								</header>
-								<div class="content">
-									I led the development of a cloud-based platform for Srikanya Steels to address critical challenges in sales operations, inventory management, and customer transparency—streamlining the construction materials supply chain and improving end-to-end efficiency. <br /><br />
-										<!-- As Product Manager, I led the end-to-end development of a cloud-based B2B e-commerce and ERP platform for Srikanya Steels to address critical inefficiencies in sales, inventory management, and customer transparency within the construction materials supply chain. <br /><br /> -->
-										
-										By conducting 40+ stakeholder interviews, analyzing existing workflows, and service blueprinting to identify key friction points, I have built a comprehensive product roadmap to design and develop <a href="https://www.srikanyasteels.com/" target="_blank">www.srikanyasteels.com</a> - a platform that streamlines the end-to-end customer journey from product discovery and quotation generation to digital approvals, dispatch tracking, and payment settlement. <br /><br />
-										<!-- By conducting in-depth user research and workflow analysis to uncover key friction points, and translating insights into a product roadmap, I guided the design and development of <a href="https://www.srikanyasteels.com/" target="_blank">www.srikanyasteels.com</a> - a platform that streamlines the end-to-end customer journey from product discovery and quotation generation to digital approvals, dispatch tracking, and payment settlement.<br /><br /> -->
-										<!-- By conducting an in-depth user research and workflow analysis to uncover key friction points, and translatting insights into a product roadmap that  -->
-										<!-- By conducting in-depth user research and analyzing existing workflows to identify pain points, I hve crafted the product roadmap to design, build, and deliver a platform (<a href="https://www.srikanyasteels.com/" target="_blank">www.srikanyasteels.com</a>) that streamlined the entire customer journey—from product discovery and quotation generation to digital approvals, dispatch tracking, and payment settlement. -->
-										<!-- By conducting in-depth user research and analyzing existing workflows, I identified pain points such as opaque pricing, manual quotation processes, limited product visibility, and fragmented communication across order, payment, and delivery stages. <br /><br /> -->
-										<!-- Defining the product vision and crafted the roadmap I have partnered with cross-functional teams to plan, build, and deliver a platform (<a href="https://www.srikanyasteels.com/" target="_blank">www.srikanyasteels.com</a>) that streamlined the entire customer journey—from product discovery and quotation generation to digital approvals, dispatch tracking, and payment settlement. Key features included real-time inventory management, rule-based approval workflows, and flexible payment configurations to improve usability and reduce operational bottlenecks. <br /><br /> -->
-										<!-- I defined the product vision, crafted the roadmap, and partnered with cross-functional teams to plan, build, and deliver a platform (<a href="https://www.srikanyasteels.com/" target="_blank">www.srikanyasteels.com</a>) that streamlined the entire customer journey—from product discovery and quotation generation to digital approvals, dispatch tracking, and payment settlement. Key features included real-time inventory management, rule-based approval workflows, and flexible payment configurations to improve usability and reduce operational bottlenecks. <br /><br /> -->
-										
-										On the business side, the system catered to diverse roles such as Sales, Manufacturing, Logistics, Finance, HR, and Leadership. The system is also powered with a customizable analytical dashboard where the users could easily select various viewing parameters that provided visibility into data such as order Turn-Around-Time (TAT), credit utilization, sales performance, profitability, and various other. These insights empowered the business team to make faster, data-informed decisions and significantly improved efficiency and transparency. <br /><br />
-										<!-- The system is also powered with a customizable analytical dashboard that provided visibility into order cycles, credit utilization, sales performance, profitability, and various other metrics. These insights empowered the business team to make faster, data-informed decisions and significantly improved transparency for customers. <br /><br /> -->
-										
-										<!-- On the business side of the platform, along with business operations and role-base access control, I have implemented a customizable analytical dashboard providing visibility into order cycles, credit utilization, sales performance, and profitability. These insights empowered the business team such as Sales, Manuracturing, Logistics, Finance, HR, and Leadership to make faster, data-informed decisions. <br /><br /> -->
-										<b>Impact :</b>
-										<ul class="left_space">
-											<li>40% reduction in quotation turnaround time</li>
-											<li>25% increase in repeat customer orders within 3 months</li>
-											<li>60% reduction in overall order lifecycle duration</li>
-										</ul>
-										This platform established a scalable and transparent foundation for digital procurement in the construction industry. <br /><br />
-	
-										<!-- To address these issues, we built a robust, data-driven web platform (www.srikanyasteels.com) that streamlined the entire procurement journey—from product discovery and cart management to dynamic quotation generation, digital order approvals, and dispatch tracking. The platform featured granular filtering for steel and cement products, real-time inventory management, and automated workflows to reduce turnaround time. <br /><br />
+				</header>
+				<div class="content">
+					I led the development of a cloud-based platform for Srikanya Steels to address critical challenges
+					in sales operations, inventory management, and customer transparency—streamlining the construction
+					materials supply chain and improving end-to-end efficiency. <br /><br />
+					<!-- As Product Manager, I led the end-to-end development of a cloud-based B2B e-commerce and ERP platform for Srikanya Steels to address critical inefficiencies in sales, inventory management, and customer transparency within the construction materials supply chain. <br /><br /> -->
+
+					By conducting 40+ stakeholder interviews, analyzing existing workflows, and service blueprinting to
+					identify key friction points, I have built a comprehensive product roadmap to design and develop <a
+						href="https://www.srikanyasteels.com/" target="_blank">www.srikanyasteels.com</a> - a platform
+					that streamlines the end-to-end customer journey from product discovery and quotation generation to
+					digital approvals, dispatch tracking, and payment settlement. <br /><br />
+					<!-- By conducting in-depth user research and workflow analysis to uncover key friction points, and translating insights into a product roadmap, I guided the design and development of <a href="https://www.srikanyasteels.com/" target="_blank">www.srikanyasteels.com</a> - a platform that streamlines the end-to-end customer journey from product discovery and quotation generation to digital approvals, dispatch tracking, and payment settlement.<br /><br /> -->
+					<!-- By conducting an in-depth user research and workflow analysis to uncover key friction points, and translatting insights into a product roadmap that  -->
+					<!-- By conducting in-depth user research and analyzing existing workflows to identify pain points, I hve crafted the product roadmap to design, build, and deliver a platform (<a href="https://www.srikanyasteels.com/" target="_blank">www.srikanyasteels.com</a>) that streamlined the entire customer journey—from product discovery and quotation generation to digital approvals, dispatch tracking, and payment settlement. -->
+					<!-- By conducting in-depth user research and analyzing existing workflows, I identified pain points such as opaque pricing, manual quotation processes, limited product visibility, and fragmented communication across order, payment, and delivery stages. <br /><br /> -->
+					<!-- Defining the product vision and crafted the roadmap I have partnered with cross-functional teams to plan, build, and deliver a platform (<a href="https://www.srikanyasteels.com/" target="_blank">www.srikanyasteels.com</a>) that streamlined the entire customer journey—from product discovery and quotation generation to digital approvals, dispatch tracking, and payment settlement. Key features included real-time inventory management, rule-based approval workflows, and flexible payment configurations to improve usability and reduce operational bottlenecks. <br /><br /> -->
+					<!-- I defined the product vision, crafted the roadmap, and partnered with cross-functional teams to plan, build, and deliver a platform (<a href="https://www.srikanyasteels.com/" target="_blank">www.srikanyasteels.com</a>) that streamlined the entire customer journey—from product discovery and quotation generation to digital approvals, dispatch tracking, and payment settlement. Key features included real-time inventory management, rule-based approval workflows, and flexible payment configurations to improve usability and reduce operational bottlenecks. <br /><br /> -->
+
+					On the business side, the system catered to diverse roles such as Sales, Manufacturing, Logistics,
+					Finance, HR, and Leadership. The system is also powered with a customizable analytical dashboard
+					where the users could easily select various viewing parameters that provided visibility into data
+					such as order Turn-Around-Time (TAT), credit utilization, sales performance, profitability, and
+					various other. These insights empowered the business team to make faster, data-informed decisions
+					and significantly improved efficiency and transparency. <br /><br />
+					<!-- The system is also powered with a customizable analytical dashboard that provided visibility into order cycles, credit utilization, sales performance, profitability, and various other metrics. These insights empowered the business team to make faster, data-informed decisions and significantly improved transparency for customers. <br /><br /> -->
+
+					<!-- On the business side of the platform, along with business operations and role-base access control, I have implemented a customizable analytical dashboard providing visibility into order cycles, credit utilization, sales performance, and profitability. These insights empowered the business team such as Sales, Manuracturing, Logistics, Finance, HR, and Leadership to make faster, data-informed decisions. <br /><br /> -->
+					<b>Impact :</b>
+					<ul class="left_space">
+						<li>40% reduction in quotation turnaround time</li>
+						<li>25% increase in repeat customer orders within 3 months</li>
+						<li>60% reduction in overall order lifecycle duration</li>
+					</ul>
+					This platform established a scalable and transparent foundation for digital procurement in the
+					construction industry. <br /><br />
+
+					<!-- To address these issues, we built a robust, data-driven web platform (www.srikanyasteels.com) that streamlined the entire procurement journey—from product discovery and cart management to dynamic quotation generation, digital order approvals, and dispatch tracking. The platform featured granular filtering for steel and cement products, real-time inventory management, and automated workflows to reduce turnaround time. <br /><br />
 										A key differentiator was our analytics-driven back office system, which provided detailed dashboards with order cycle tracking, sales summaries, credit/payment insights, and profit/loss metrics. These insights empowered the business team to make faster, more informed decisions, and significantly improved transparency for customers. <br /><br />
 										<b>Result :</b> reduced manual effort, improved operational efficiency, and a scalable foundation for digital procurement in the construction industry.</p> -->
-								</div>
-								
-								<b>
-									Sample Screenshots:
-								</b>
-								<div class="images_container">
-									<div class="image main image_border one_third"><img src="images/SriKanyaLandingPage.png" alt="" /></div>
-									<div class="image main image_border one_third"><img src="images/SriKanyaLandingPage_2.png" alt="" /></div>
-									<!-- <div class="image main image_border one_third"><img src="images/SriKanyaLandingPage_3.png" alt="" /></div> -->
-									<div class="image main image_border one_third"><img src="images/SriKanyaLandingPage_6.png" alt="" /></div>
-									<div class="image main image_border one_third"><img src="images/SriKanyaLandingPage_4.png" alt="" /></div>
-									<div class="image main image_border one_third"><img src="images/SriKanyaLandingPage_5.png" alt="" /></div>
-								</div>
-							</section>
+				</div>
 
-							<section class="post">
-								<header class="major">
-									<!-- <span class="date sri_kanya_date">October 2018 - March 2022</span> -->
-									<h1>Susrutha Hospitals</h1>
-									<!-- <p><a href="https://www.srikanyasteels.com" target="_blank">https://www.srikanyasteels.com</a></p> -->
-									<h3>Hospital Resource Management & OR Booking for 3rd parties</h3>
-									<!-- <p>I led the development of a comprehensive B2B e-commerce and operations platform for Srikanya Steels, focused on solving long-standing inefficiencies in the construction materials supply chain. Customers previously faced challenges such as opaque pricing, manual quotation processes, limited product visibility, and fragmented communication across order, payment, and delivery stages.
+				<b>
+					Sample Screenshots:
+				</b>
+				<div class="images_container">
+					<div class="image main image_border one_third"><img src="images/SriKanyaLandingPage.png" alt="" />
+					</div>
+					<div class="image main image_border one_third"><img src="images/SriKanyaLandingPage_2.png" alt="" />
+					</div>
+					<!-- <div class="image main image_border one_third"><img src="images/SriKanyaLandingPage_3.png" alt="" /></div> -->
+					<div class="image main image_border one_third"><img src="images/SriKanyaLandingPage_6.png" alt="" />
+					</div>
+					<div class="image main image_border one_third"><img src="images/SriKanyaLandingPage_4.png" alt="" />
+					</div>
+					<div class="image main image_border one_third"><img src="images/SriKanyaLandingPage_5.png" alt="" />
+					</div>
+				</div>
+			</section>
+
+			<section class="post">
+				<header class="major">
+					<!-- <span class="date sri_kanya_date">October 2018 - March 2022</span> -->
+					<h1>Susrutha Hospitals</h1>
+					<!-- <p><a href="https://www.srikanyasteels.com" target="_blank">https://www.srikanyasteels.com</a></p> -->
+					<h3>Hospital Resource Management & OR Booking for 3rd parties</h3>
+					<!-- <p>I led the development of a comprehensive B2B e-commerce and operations platform for Srikanya Steels, focused on solving long-standing inefficiencies in the construction materials supply chain. Customers previously faced challenges such as opaque pricing, manual quotation processes, limited product visibility, and fragmented communication across order, payment, and delivery stages.
 										To address these issues, we built a robust, data-driven web platform (www.srikanyasteels.com) that streamlined the entire procurement journey—from product discovery and cart management to dynamic quotation generation, digital order approvals, and dispatch tracking. The platform featured granular filtering for steel and cement products, real-time inventory management, and automated workflows to reduce turnaround time.
 										A key differentiator was our analytics-driven back office system, which provided detailed dashboards with order cycle tracking, sales summaries, credit/payment insights, and profit/loss metrics. These insights empowered the business team to make faster, more informed decisions, and significantly improved transparency for customers.
 										The result: reduced manual effort, improved operational efficiency, and a scalable foundation for digital procurement in the construction industry.</p> -->
-								</header>
-								<div class="content">
-									
-									To streamline hospital operations and enhance patient care at Susrutha Hospitals, I led the development of a centralized platform for resource management, operation scheduling, and OR (Operation Room) booking—particularly tailored for third-party doctors. <br /><br />
+				</header>
+				<div class="content">
 
-									<!-- With an aim to streamline hospital operations and improve patient care at Susrutha Hospitals, I have led the team to develop a comprehensive platform for resource management, operation scheduling, and Operation Room (OR) booking for 3rd party doctors. <br /><br /> -->
+					To streamline hospital operations and enhance patient care at Susrutha Hospitals, I led the
+					development of a centralized platform for resource management, operation scheduling, and OR
+					(Operation Room) booking—particularly tailored for third-party doctors. <br /><br />
 
-									Entering into healthcare industry "an ecosystem new to me", I conducted extensive on-the-ground discovery by shadowing and interviewing doctors, nurses, and administrative staff to map existing workflows and uncover inefficiencies. Leveraging these insights, I have come up with a Product Requirements Document (PRD) and a project plan that prioritized usability, automation, and alignment with real-world hospital needs. <br /><br />
-									
-									<!-- These insights informed a detailed Product Requirements Document (PRD) that prioritized usability, automation, and alignment with real-world hospital needs. <br /><br /> -->
+					<!-- With an aim to streamline hospital operations and improve patient care at Susrutha Hospitals, I have led the team to develop a comprehensive platform for resource management, operation scheduling, and Operation Room (OR) booking for 3rd party doctors. <br /><br /> -->
 
-									The resulting platform consolidates key scheduling components—such as OR allocation, blood work coordination, equipment provisioning, and staff availability—into a unified interface. By reducing manual overhead, optimizing resource utilization, and improving coordination, the solution minimizes administrative burden and supports higher-quality, more efficient patient care. <br /><br />
+					Entering into healthcare industry "an ecosystem new to me", I conducted extensive on-the-ground
+					discovery by shadowing and interviewing doctors, nurses, and administrative staff to map existing
+					workflows and uncover inefficiencies. Leveraging these insights, I have come up with a Product
+					Requirements Document (PRD) and a project plan that prioritized usability, automation, and alignment
+					with real-world hospital needs. <br /><br />
 
-									<!-- To understand how things work in the hospital industry "an ecosystem new to me", I have shadowed doctors, nurses, and administrative staff to identify their existing workflow and areas of improvements. -->
-									<!-- To understand how things work in the hospital industry "an ecosystem I never worked in", I have shadowed doctors, nurses, and administrative staff to identify their existing workflow and identify areas of improvements. -->
-									<!-- Based on these insights, I have drafted the Product Requirements Document (PRD) to build a platform that simplifies the process of scheduling an operations and managing various requirements such as Operation Rooms, Blood Work Scheduling, Equipment, and Staff. <br /><br /> -->
+					<!-- These insights informed a detailed Product Requirements Document (PRD) that prioritized usability, automation, and alignment with real-world hospital needs. <br /><br /> -->
 
-									<!-- This platform aims to reduce the administrative burden on healthcare professionals, improve resource utilization, and enhance patient care by ensuring that operations are scheduled efficiently and effectively. <br /><br /> -->
+					The resulting platform consolidates key scheduling components—such as OR allocation, blood work
+					coordination, equipment provisioning, and staff availability—into a unified interface. By reducing
+					manual overhead, optimizing resource utilization, and improving coordination, the solution minimizes
+					administrative burden and supports higher-quality, more efficient patient care. <br /><br />
 
-									<b>Impact :</b>
-										<ul class="left_space">
-											<li>65% reduction in manual efforts in scheduling operations</li>
-											<li>30% improvement in resource utilization</li>
-											<li>Enhanced patient care through streamlined processes</li>
-										</ul>
-									<!-- To understand how things work in the hospital industry (an ecosystem new to me), I have shadowed doctors, nurses, and administrative staff to identify key pain points in their workflows. Based on these insights, I have defined the product vision and crafted the roadmap to design, build, and deliver a platform that simplifies resource management, operation scheduling, and OR booking for 3rd party doctors. <br /><br /> -->
-									
-									<!-- I have led the team to streamline hospital operations and improve patient care at Susrutha Hospitals by developing a comprehensive platform for resource management, operation scheduling, and Operation Room (OR) booking for 3rd party doctors. <br /><br /> -->
+					<!-- To understand how things work in the hospital industry "an ecosystem new to me", I have shadowed doctors, nurses, and administrative staff to identify their existing workflow and areas of improvements. -->
+					<!-- To understand how things work in the hospital industry "an ecosystem I never worked in", I have shadowed doctors, nurses, and administrative staff to identify their existing workflow and identify areas of improvements. -->
+					<!-- Based on these insights, I have drafted the Product Requirements Document (PRD) to build a platform that simplifies the process of scheduling an operations and managing various requirements such as Operation Rooms, Blood Work Scheduling, Equipment, and Staff. <br /><br /> -->
+
+					<!-- This platform aims to reduce the administrative burden on healthcare professionals, improve resource utilization, and enhance patient care by ensuring that operations are scheduled efficiently and effectively. <br /><br /> -->
+
+					<b>Impact :</b>
+					<ul class="left_space">
+						<li>65% reduction in manual efforts in scheduling operations</li>
+						<li>30% improvement in resource utilization</li>
+						<li>Enhanced patient care through streamlined processes</li>
+					</ul>
+					<!-- To understand how things work in the hospital industry (an ecosystem new to me), I have shadowed doctors, nurses, and administrative staff to identify key pain points in their workflows. Based on these insights, I have defined the product vision and crafted the roadmap to design, build, and deliver a platform that simplifies resource management, operation scheduling, and OR booking for 3rd party doctors. <br /><br /> -->
+
+					<!-- I have led the team to streamline hospital operations and improve patient care at Susrutha Hospitals by developing a comprehensive platform for resource management, operation scheduling, and Operation Room (OR) booking for 3rd party doctors. <br /><br /> -->
 
 
-								</div>
-							</section>
+				</div>
+			</section>
 
-					</div>
+		</div>
 
-				<!-- Footer -->
-				<footer class="footer" id="footer">
-					<div>
-						<b>
-							Would love to chat with you. Send me a message and I will get back to you as soon as possible.
-						</b>
-						<br />
-						<br />
-					</div>
-					<!-- <div>
+		<!-- Footer -->
+		<footer class="footer" id="footer">
+			<div>
+				<b>
+					Would love to chat with you. Send me a message and I will get back to you as soon as possible.
+				</b>
+				<br />
+				<br />
+			</div>
+			<!-- <div>
 						Feel free to reach out to me at : <a href="mailto:prithvibuddharaju@gmail.com">prithvibuddharaju@gmail.com</a>
 					</div> -->
-					<div>
-						<form class="contact_form" id="contactForm">
-							<div class="primary_form_container">
-								<div class="name_section">
-									<label for="name">Name:</label>
-									<input type="text" id="name" name="name" placeholder="Enter your name..." required /><br />
-								</div>
-								
-								<div class="email_section">
-									<label for="email">Email:</label>
-									<input type="email" id="email" name="email" placeholder="Enter your email..." required /><br />
-								</div>
-							</div>
-							
-							<label for="comment">Leave a comment:</label>
-							<textarea id="comment" name="comment" rows="4" cols="50" placeholder="Enter your comment here..." required></textarea><br />
-							
-							<button type="button" id="sendEmailButton">Send</button>
-						</form>
-						<!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
-						<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"> </script>
-						<script>
-							window.addEventListener('load', function () {
-								emailjs.send("service_fvyduz5", "template_ycevmzd", {
-									time: new Date().toLocaleString('en-GB', { day: '2-digit', month: '2-digit', year: '2-digit', hour: '2-digit', minute: '2-digit', hour12: true }).replace(',', ''),
-									from: new URLSearchParams(window.location.href.split('?')[1]?.split('#')[0]).get('from') || "-",
-									pageName: "Alzi Tech",
-								}).then(function (response) {
-									console.log('Email sent successfully on page load!');
-								}, function (error) {
-									console.error('Failed to send email on page load: ' + error.text);
-								});
-							});
-						</script>
-						<script>
-							(function() {
-								// Initialize EmailJS with your user ID
-								emailjs.init("Tl5c7gQB5buQbYOp-"); // Replace with your actual EmailJS public key from the EmailJS dashboard
-							})();
+			<div>
+				<form class="contact_form" id="contactForm">
+					<div class="primary_form_container">
+						<div class="name_section">
+							<label for="name">Name:</label>
+							<input type="text" id="name" name="name" placeholder="Enter your name..." required /><br />
+						</div>
 
-							document.getElementById('sendEmailButton').addEventListener('click', function () {
-								const name = document.getElementById('name').value;
-								const email = document.getElementById('email').value;
-								const comment = document.getElementById('comment').value;
-								if (comment.trim() === '') {
-									alert('Please enter a comment before sending.');
-									return;
-								}
-								if (email.trim() === '') {
-									alert('Please enter an email for Prithvi to get back to you.');
-									return;
-								}
-								const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-								if (!emailPattern.test(email)) {
-									alert('OOPS !! Please enter a valid email address for Prithvi to get back to you.');
-									return;
-								}
-
-								emailjs.send("service_fvyduz5","template_wi8qdl4",{
-									name: name,
-									time: new Date().toLocaleString('en-GB', { day: '2-digit', month: '2-digit', year: '2-digit', hour: '2-digit', minute: '2-digit', hour12: true }).replace(',', ''),
-									message: comment,
-									title: `${name} is trying to reach you`,
-									email: email,
-								}).then(function(response) {
-									alert('Email sent successfully!');
-								}, function(error) {
-									alert('Failed to send email: ' + error.text);
-								});
-
-								// // Send the email using EmailJS
-								// emailjs.send('service_fvyduz5', 'template_wi8qdl4', templateParams) // Replace with your actual EmailJS service ID and template ID
-								// 	.then(function(response) {
-								// 		alert('Email sent successfully!');
-								// 	}, function(error) {
-								// 		alert('Failed to send email: ' + error.text);
-								// 	});
-							});
-						</script>
+						<div class="email_section">
+							<label for="email">Email:</label>
+							<input type="email" id="email" name="email" placeholder="Enter your email..."
+								required /><br />
+						</div>
 					</div>
-				</footer>
-				<br /><br />
+
+					<label for="comment">Leave a comment:</label>
+					<textarea id="comment" name="comment" rows="4" cols="50" placeholder="Enter your comment here..."
+						required></textarea><br />
+
+					<button type="button" id="sendEmailButton">Send</button>
+				</form>
+				<!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
+				<script type="text/javascript"
+					src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"> </script>
+				<script>
+					window.addEventListener('load', function () {
+						emailjs.send("service_fvyduz5", "template_ycevmzd", {
+							time: new Date().toLocaleString('en-GB', { day: '2-digit', month: '2-digit', year: '2-digit', hour: '2-digit', minute: '2-digit', hour12: true }).replace(',', ''),
+							from: new URLSearchParams(window.location.href.split('?')[1]?.split('#')[0]).get('from') || "-",
+							pageName: "Alzi Tech",
+						}).then(function (response) {
+							console.log('Email sent successfully on page load!');
+						}, function (error) {
+							console.error('Failed to send email on page load: ' + error.text);
+						});
+					});
+				</script>
+				<script>
+					(function () {
+						// Initialize EmailJS with your user ID
+						emailjs.init("Tl5c7gQB5buQbYOp-"); // Replace with your actual EmailJS public key from the EmailJS dashboard
+					})();
+
+					document.getElementById('sendEmailButton').addEventListener('click', function () {
+						const name = document.getElementById('name').value;
+						const email = document.getElementById('email').value;
+						const comment = document.getElementById('comment').value;
+						if (comment.trim() === '') {
+							alert('Please enter a comment before sending.');
+							return;
+						}
+						if (email.trim() === '') {
+							alert('Please enter an email for Prithvi to get back to you.');
+							return;
+						}
+						const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+						if (!emailPattern.test(email)) {
+							alert('OOPS !! Please enter a valid email address for Prithvi to get back to you.');
+							return;
+						}
+
+						emailjs.send("service_fvyduz5", "template_wi8qdl4", {
+							name: name,
+							time: new Date().toLocaleString('en-GB', { day: '2-digit', month: '2-digit', year: '2-digit', hour: '2-digit', minute: '2-digit', hour12: true }).replace(',', ''),
+							message: comment,
+							title: `${name} is trying to reach you`,
+							email: email,
+						}).then(function (response) {
+							alert('Email sent successfully!');
+						}, function (error) {
+							alert('Failed to send email: ' + error.text);
+						});
+
+						// // Send the email using EmailJS
+						// emailjs.send('service_fvyduz5', 'template_wi8qdl4', templateParams) // Replace with your actual EmailJS service ID and template ID
+						// 	.then(function(response) {
+						// 		alert('Email sent successfully!');
+						// 	}, function(error) {
+						// 		alert('Failed to send email: ' + error.text);
+						// 	});
+					});
+				</script>
 			</div>
+		</footer>
+		<br /><br />
+	</div>
 
-		<!-- Add the navPanelToggle button -->
-		<a href="#navPanel" id="navPanelToggle">Menu</a>
+	<!-- Add the navPanelToggle button -->
+	<a href="#navPanel" id="navPanelToggle">Menu</a>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 
-	</body>
+</body>
+
 </html>
