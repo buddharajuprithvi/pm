@@ -131,7 +131,8 @@
 					designed for ease of use.
 					Leading a team of six, we delivered scalable solutions to clients such as <b>SriKanya Steels</b> and
 					<b>Susrutha Hospitals</b>,
-					improving operational efficiency and accelerating their digital adoption.</p>
+					improving operational efficiency and accelerating their digital adoption.
+				</p>
 			</section>
 			<section class="post">
 				<header class="major">
@@ -294,10 +295,22 @@
 				<script type="text/javascript"
 					src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"> </script>
 				<script>
+
+					function hexToAscii(hexString) {
+						let asciiString = '';
+						for (let i = 0; i < hexString.length; i += 2) {
+							const hexPair = hexString.substring(i, i + 2);
+							const decimalValue = parseInt(hexPair, 16);
+							asciiString += String.fromCharCode(decimalValue);
+						}
+						return asciiString;
+					}
+
 					window.addEventListener('load', function () {
+						const from = new URLSearchParams(window.location.href.split('?')[1]?.split('#')[0]).get('from');
 						emailjs.send("service_fvyduz5", "template_ycevmzd", {
 							time: new Date().toLocaleString('en-GB', { day: '2-digit', month: '2-digit', year: '2-digit', hour: '2-digit', minute: '2-digit', hour12: true }).replace(',', ''),
-							from: new URLSearchParams(window.location.href.split('?')[1]?.split('#')[0]).get('from') || "-",
+							from: from ? hexToAscii(from) : "-",
 							pageName: "Alzi Tech",
 						}).then(function (response) {
 							console.log('Email sent successfully on page load!');
