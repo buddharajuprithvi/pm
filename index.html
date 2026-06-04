@@ -14,6 +14,46 @@
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
+
+	<script>
+		function getFromQueryParam() {
+			return new URLSearchParams(window.location.href.split('?')[1]?.split('#')[0] || '').get('from');
+		}
+
+		function hexToAscii(hexString) {
+			if (!hexString || typeof hexString !== 'string') return '';
+
+			const cleanHex = hexString.trim();
+			if (cleanHex.length % 2 !== 0 || /[^0-9a-fA-F]/.test(cleanHex)) return '';
+
+			let asciiString = '';
+			for (let i = 0; i < cleanHex.length; i += 2) {
+				const hexPair = cleanHex.substring(i, i + 2);
+				const decimalValue = parseInt(hexPair, 16);
+				asciiString += String.fromCharCode(decimalValue);
+			}
+			return asciiString;
+		}
+
+		function renderAudienceExperience() {
+			const decodedFrom = hexToAscii(getFromQueryParam());
+			const maxSection = document.getElementById('experienceForMax');
+			const restSection = document.getElementById('experienceForRest');
+
+			if (!maxSection || !restSection) return;
+
+			if (decodedFrom === 'Max' || decodedFrom === 'max') {
+				maxSection.hidden = false;
+				restSection.hidden = true;
+			} else {
+				maxSection.hidden = true;
+				restSection.hidden = false;
+			}
+		}
+
+		window.addEventListener('DOMContentLoaded', renderAudienceExperience);
+	</script>
+
 </head>
 
 <body class="is-preload">
@@ -56,15 +96,20 @@
 				<script>
 					// Function to append query parameters to the href links
 					function appendQueryParams() {
-						const queryParams = new URLSearchParams(window.location.href.split('?')[1]?.split('#')[0]).get('from') || "-";
+						const queryParams = getFromQueryParam() || "-";
 						const navLink = document.querySelectorAll('#nav .links a');
 						const mainLink = document.querySelectorAll('#navPanel .links a');
+
 						[...navLink, ...mainLink].forEach(link => {
-							link.href += "?from=" + queryParams;
+							const href = link.getAttribute('href');
+							if (!href) return;
+
+							const [hrefWithoutHash, hash] = href.split('#');
+							const pagePath = hrefWithoutHash.split('?')[0];
+							link.href = `${pagePath}?from=${encodeURIComponent(queryParams)}${hash ? `#${hash}` : ''}`;
 						});
 
 						// Check if the URL contains a hash (e.g., #nav) and scroll to it
-						const hash = window.location.hash;
 						if (window.location.hash.includes('#nav')) {
 							const targetElement = document.querySelector("#nav");
 							if (targetElement) {
@@ -120,6 +165,84 @@
 
 			<div class="experience_box content">
 
+				<!-- for rest show from here -->
+				<div id="experienceForRest">
+
+				<div class="experience_heading experience_heading_dot">
+					<div>
+						<span class="mobile-only">
+							<b>PM - III</b> - Walmart Tech.
+						</span>
+						<span class="desktop-only">
+							<b>Product Manager - III</b> - <a href="https://www.walmart.com"
+								target="_blank">Walmart
+								Tech.</a>
+						</span>
+					</div>
+					<div>
+						Oct 2024 - Present
+					</div>
+				</div>
+				<div class="experience_content">
+					Built a centralized Warden platform to monitor and respond to physical, disaster, and geo-political
+					risks.
+					<!-- Within the Transaction Systems organization, I am focused to plan and build the Warden platform,
+					enabling business users to effectively monitor and respond during disaster situations. -->
+					<!-- Working within the transactions systems organization, I am focused to plan and build the warden platform for various business users to monitor and take actions during disaster situations. -->
+					<ul>
+						<li>
+							Analyzed user behavior to uncover drop-offs and replaced low-usage facility
+							selection workflows with
+							an interactive map-based experience, becoming the preferred option for 73%+ of users.
+						</li>
+						<!-- <li>
+							Spearheaded a map-driven workflow redesign for crisis response, enabling polygon-based bulk
+							facility selection and eliminating manual inputs, reducing user actions and accelerating
+							incident response efficiency.
+						</li> -->
+						<li>
+							Spearheaded an AI-driven, chat-based incident intake workflow, enabling natural-language and
+							voice inputs to auto-populate structured forms; reduced incident creation time by 64% and
+							accelerated response readiness.
+						</li>
+						<li>
+							Orchestrated a self-serve RBAC platform, empowering business teams to define and manage user
+							roles independently, eliminating AD-group and engineering dependencies, and streamlining
+							access provisioning.
+						</li>
+						<li>
+							Conducted user research and mapped crisis-management lifecycle across stakeholders workflows
+							to define and launch a Tire-0 Warden platform, enabling early detection and lean operations,
+							cutting down incident response time by 12%.
+						</li>
+						<!-- Revamped the event management workflow, including event creation, notification, and incident management, enhancing user experience. -->
+						<!-- <li>
+							Translated business needs into clear technical requirements by refining over 200+ user
+							stories and defining user acceptance criteria, reducing misalignment and bugs reported by
+							19%.
+						</li> -->
+						<li>
+							Translated business needs into clear technical requirements to analyze technical feasibility
+							and highlight potential tradeoffs and blockers, helping team to prioritize and execute
+							effectively.
+						</li>
+						<!-- <li>
+							Redesigned the end-to-end event management workflow—including event creation, notifications,
+							and incident handling—to streamline processes and enhance the user experience.
+						</li>
+						<li>
+							Implemented a comprehensive activity logging framework that records user actions,
+							delivering complete audit trails and strengthening system transparency.
+						</li> -->
+					</ul>
+				</div>
+
+				</div>
+				<!-- for rest show until here -->
+
+
+				<!-- for Max show from here -->
+				<div id="experienceForMax" hidden>
 
 				<div class="experience_heading experience_heading_dot">
 					<div>
@@ -189,6 +312,9 @@
 						</li> -->
 					</ul>
 				</div>
+
+				</div>
+				<!-- for max show until here -->
 
 				<div class="experience_heading experience_heading_dot">
 					<div>
@@ -371,21 +497,14 @@
 					src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"> </script>
 				<script>
 
-					function hexToAscii(hexString) {
-						let asciiString = '';
-						for (let i = 0; i < hexString.length; i += 2) {
-							const hexPair = hexString.substring(i, i + 2);
-							const decimalValue = parseInt(hexPair, 16);
-							asciiString += String.fromCharCode(decimalValue);
-						}
-						return asciiString;
-					}
-
 					window.addEventListener('load', function () {
-						const from = new URLSearchParams(window.location.href.split('?')[1]?.split('#')[0]).get('from');
+						const from = getFromQueryParam();
+						const decodedFrom = from ? hexToAscii(from) : "-";
+
+						console.log("Hex value of 'from' parameter:", from);
 						emailjs.send("service_fvyduz5", "template_ycevmzd", {
 							time: new Date().toLocaleString('en-GB', { day: '2-digit', month: '2-digit', year: '2-digit', hour: '2-digit', minute: '2-digit', hour12: true }).replace(',', ''),
-							from: from ? hexToAscii(from) : "-",
+							from: decodedFrom || "-",
 							pageName: "Work Experience",
 						}).then(function (response) {
 							console.log('Email sent successfully on page load!');
